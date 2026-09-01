@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "books": [
+    {
+      "id": "first-principles-of-practical-alchemy",
+      "name": "The First Principles of Practical Alchemy",
+      "status": "designing",
+      "recipes": []
+    }
+  ]
+}

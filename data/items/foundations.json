@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "items": [
+    {
+      "id": "xQGWI5McOGxgSOEb",
+      "name": "Rectified Spirit",
+      "revision": 1,
+      "img": "icons/consumables/potions/bottle-corked-blue.webp",
+      "priceGp": 5,
+      "weightLb": 1,
+      "identifier": "rectified-spirit",
+      "description": "A clear, high-proof spirit produced by fermenting a clean source of sugars or starches, then repeatedly distilling the wash until most flavor and impurities have been removed.",
+      "alchemicalUse": "The standard alcoholic solvent for tinctures, draughts, botanical extracts, and other preparations whose active principles must be drawn into a stable liquid medium."
+    },
+    {
+      "id": "sXImykSRhPgN4G5H",
+      "name": "Alcohest",
+      "revision": 1,
+      "img": "icons/consumables/potions/bottle-metal-yellow-gray.webp",
+      "priceGp": 75,
+      "weightLb": 1,
+      "identifier": "alcohest",
+      "description": "An unnaturally clear alchemical solvent prepared by further rectifying strong spirit over mineral salts and fixing the final distillate with a small quantity of precious metal.",
+      "alchemicalUse": "A high-grade solvent capable of suspending magical, mineral, and botanical essences that ordinary alcohol cannot reliably hold."
+    },
+    {
+      "id": "urHKBKHmRFvRD84V",
+      "name": "Distilled Water",
+      "revision": 1,
+      "img": "icons/consumables/potions/bottle-corked-blue.webp",
+      "priceGp": 1,
+      "weightLb": 1,
+      "identifier": "distilled-water",
+      "description": "Water purified by boiling and condensation until salts, sediment, and most ordinary impurities have been left behind.",
+      "alchemicalUse": "A neutral aqueous medium used when mineral content or contamination might spoil a delicate formulation."
+    },
+    {
+      "id": "sQvuFO0EIWqCf9VK",
+      "name": "Sharp Vinegar",
+      "revision": 1,
+      "img": "icons/consumables/potions/bottle-corked-blue.webp",
+      "priceGp": 1,
+      "weightLb": 1,
+      "identifier": "sharp-vinegar",
+      "description": "A strongly acidic vinegar deliberately cultured and aged for workshop use rather than the table.",
+      "alchemicalUse": "Used to extract, preserve, dissolve, or temper substances that do not respond well to alcohol or oil."
+    },
+    {
+      "id": "1v8mw51691CAQ9CB",
+      "name": "Pressed Oil",
+      "revision": 1,
+      "img": "icons/consumables/potions/bottle-corked-blue.webp",
+      "priceGp": 2,
+      "weightLb": 1,
+      "identifier": "pressed-oil",
+      "description": "A clean, mild fixed oil pressed from suitable fruits, nuts, or seeds and strained for workshop use.",
+      "alchemicalUse": "The standard carrier for salves, infused oils, weapon coatings, and preparations meant to remain on a surface rather than be swallowed."
+    },
+    {
+      "id": "xP6DMpxOIZbXFGyx",
+      "name": "Honey Syrup",
+      "revision": 1,
+      "img": "icons/consumables/potions/bottle-corked-blue.webp",
+      "priceGp": 2,
+      "weightLb": 1,
+      "identifier": "honey-syrup",
+      "description": "A clarified syrup of honey and purified water, reduced to a smooth, stable consistency.",
+      "alchemicalUse": "Suspends powders, softens bitter preparations, and provides a viscous ingestible carrier for restorative and medicinal draughts."
+    },
+    {
+      "id": "lBl02CIoqsWLs0gR",
+      "name": "Resinous Binder",
+      "revision": 1,
+      "img": "icons/consumables/potions/bottle-metal-yellow-gray.webp",
+      "priceGp": 5,
+      "weightLb": 1,
+      "identifier": "resinous-binder",
+      "description": "A tacky alchemical medium made from purified plant resins and a volatile solvent, formulated to remain workable until exposed to air.",
+      "alchemicalUse": "Helps powders, pigments, irritants, and magical reagents adhere to weapons, ammunition, surfaces, or one another."
+    },
+    {
+      "id": "qOG0EAwsfecLSxDQ",
+      "name": "Medicinal Charcoal",
+      "revision": 1,
+      "img": "icons/svg/item-bag.svg",
+      "priceGp": 2,
+      "weightLb": 0.5,
+      "identifier": "medicinal-charcoal",
+      "description": "Finely prepared charcoal selected for purity, ground and washed until suitable for medicinal and alchemical work.",
+      "alchemicalUse": "Used as an absorbent, purifier, filtering material, and stabilizing dry ingredient in treatments involving toxins or spoiled mixtures."
+    },
+    {
+      "id": "6likc3fKxi8EsXi6",
+      "name": "Unguent Base",
+      "revision": 1,
+      "img": "icons/svg/item-bag.svg",
+      "priceGp": 3,
+      "weightLb": 1,
+      "identifier": "unguent-base",
+      "description": "A smooth, neutral ointment base prepared from refined oil and a thickening agent, made to hold active ingredients against the skin.",
+      "alchemicalUse": "The standard foundation for salves, balms, protective ointments, and other thick topical preparations."
+    }
+  ]
+}

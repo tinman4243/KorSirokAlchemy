@@ -1,0 +1,43 @@
+{
+  "id": "kor-sirok-alchemy",
+  "type": "module",
+  "title": "Kor Sirok Alchemy",
+  "description": "Campaign alchemy content and synchronization for D&D 5e using Mastercrafted and Kris's Compendium of Trade Goods.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "Kor Sirok Campaign"
+    }
+  ],
+  "esmodules": [
+    "scripts/sync.js"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system"
+      }
+    ],
+    "recommends": [
+      {
+        "id": "mastercrafted",
+        "type": "module"
+      },
+      {
+        "id": "kctg-5e",
+        "type": "module"
+      }
+    ]
+  },
+  "packs": [],
+  "media": [],
+  "readme": "README.md",
+  "manifest": "https://dl.dropboxusercontent.com/scl/fi/1oq1xfu9fm1a248k8vzej/module.json?rlkey=vlsaw7cadw3uctnebx9su8y5a&dl=0",
+  "download": "https://dl.dropboxusercontent.com/scl/fi/mknjgyczwjn6brd5vuqxt/kor-sirok-alchemy-0.1.0.zip?rlkey=tivm3ykrzpnaxylaksqy4a6fv&dl=0"
+}
