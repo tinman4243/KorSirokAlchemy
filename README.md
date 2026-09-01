@@ -1,46 +1,46 @@
 # Kor Sirok Alchemy
 
-A small campaign module that keeps the editable source for the Kor Sirok alchemy subsystem outside Foundry and synchronizes it into the world at runtime.
+Kor Sirok Alchemy keeps the campaign's editable alchemy source in ordinary JSON and synchronizes that source into Foundry VTT.
 
-## Why the world compendium remains
+## Managed world content
 
-Foundry V11+ module compendium packs are database directories rather than ordinary editable JSON files. To keep this project easy to author in Dropbox, this module treats its JSON files as the canonical source and synchronizes them into a world Item compendium named:
+The module currently manages:
 
-`world.kor-sirok-alchemy`
+- `world.kor-sirok-alchemy` — the existing world Item compendium.
+- `The First Principles of Practical Alchemy` — a Mastercrafted Journal recipe book.
 
-The world compendium is therefore generated/runtime data. Do not hand-edit managed entries unless you intend those edits to be overwritten by a future module revision.
+The Item compendium remains the runtime target so existing stable compendium UUIDs continue to work.
 
-If the compendium does not exist, the module will create it.
+## Version 0.2.0
 
-## Source layout
+The module now contains:
 
-- `data/items/foundations.json` — canonical alchemical intermediate Items.
-- `data/recipes/introduction-to-alchemy.json` — source scaffold for the introductory Mastercrafted book.
-- `scripts/sync.js` — synchronization logic.
+- Nine foundational alchemical media.
+- Five finished field formulations.
+- Fourteen Mastercrafted recipes in *The First Principles of Practical Alchemy*.
+- Runtime resolution of KCTG ingredients by exact name.
+- Runtime resolution of campaign Herbarium/spell-component Items by exact world Item name.
+- Revision-based synchronization so unchanged managed documents are left alone.
 
-Each managed Item has a stable Foundry document ID and a small integer `revision`. Increment an Item's revision when changing that Item. On world startup, only new or revised managed Items are written.
+Finished formulation Items currently carry their rules text but no Midi-QOL automation. Automation can be layered onto them later without changing their stable IDs.
 
-## Manual sync
+## Manual synchronization
 
-As GM, run this in the browser console:
+As GM:
 
 `game.modules.get("kor-sirok-alchemy").api.sync()`
 
-## Initial manual install
+Individual passes are also available:
 
-Extract the `kor-sirok-alchemy` folder into:
+`game.modules.get("kor-sirok-alchemy").api.syncItems()`
 
-`FoundryVTT/Data/modules/`
+`game.modules.get("kor-sirok-alchemy").api.syncRecipeBook()`
 
-Restart Foundry, enable **Kor Sirok Alchemy**, and load the world.
+## Source files
 
-## Dropbox update hosting
+- `data/items/foundations.json`
+- `data/items/formulations.json`
+- `data/recipes/introduction-to-alchemy.json`
+- `scripts/sync.js`
 
-After the first local test, host two stable shared files:
-
-- `module.json` — use a direct/raw Dropbox URL for Foundry's manifest.
-- `kor-sirok-alchemy.zip` — use a direct-download Dropbox URL for Foundry's download field.
-
-Then add `manifest` and `download` fields to `module.json` and bump `version` for every release.
-
-The ZIP must contain the top-level `kor-sirok-alchemy/` directory.
+Managed documents should be edited in these source files rather than directly in Foundry. Increment the relevant `revision` whenever a managed record changes.
