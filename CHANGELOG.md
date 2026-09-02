@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1
+- Fixed recipe synchronization when a Herbarium plant and an old KCTG world Item share the same name.
+- Herbarium ingredients now resolve only from world Items whose source book is `Herbarium`.
+- Custom spell-component resources now resolve by D&D5e identifier instead of display name.
+- Bumped managed recipe revisions so a failed/partial v0.2.0 sync is repaired automatically.
+
 ## 0.2.0
 - Added five finished alchemical formulation Items.
 - Added *The First Principles of Practical Alchemy* as a managed Mastercrafted recipe book.

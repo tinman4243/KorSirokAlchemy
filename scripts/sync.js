@@ -289,7 +289,27 @@ async function buildResolvers(alchemyPack) {
 
   const alchemyByName = uniqueNameMap(alchemyIndex, ITEM_PACK_ID);
   const kctgByName = uniqueNameMap(kctgIndex, KCTG_PACK_ID);
-  const worldByName = uniqueNameMap(game.items.contents, "world Items");
+
+  // Campaign botanical ingredients coexist with old KCTG world copies.
+  // Resolve Herbarium plants only from Items whose source book is explicitly Herbarium.
+  const herbariumItems = game.items.contents.filter(
+    item => item.system?.source?.book === "Herbarium"
+  );
+  const herbariumByName = uniqueNameMap(herbariumItems, "Herbarium world Items");
+
+  // Some ordinary spell-component resources are campaign world Items. Their D&D5e
+  // identifier is a better key than display name because display names may be duplicated.
+  const worldByIdentifier = new Map();
+  for (const item of game.items.contents) {
+    const identifier = item.system?.identifier;
+    if (!identifier) continue;
+
+    if (worldByIdentifier.has(identifier)) {
+      worldByIdentifier.set(identifier, null);
+    } else {
+      worldByIdentifier.set(identifier, item);
+    }
+  }
 
   return {
     alchemy(name) {
@@ -318,10 +338,30 @@ async function buildResolvers(alchemyPack) {
       };
     },
 
-    world(name) {
-      const entry = worldByName.get(name);
+    herbarium(name) {
+      const entry = herbariumByName.get(name);
       if (!entry) {
-        throw new Error(`Could not uniquely resolve world Item "${name}".`);
+        throw new Error(
+          `Could not uniquely resolve Herbarium Item "${name}". ` +
+          `Expected exactly one world Item with system.source.book = "Herbarium".`
+        );
+      }
+
+      return {
+        uuid: entry.uuid,
+        name: entry.name,
+        img: entry.img
+      };
+    },
+
+    worldIdentifier(name, option) {
+      const identifier = option.identifier;
+      const entry = worldByIdentifier.get(identifier);
+
+      if (!entry) {
+        throw new Error(
+          `Could not uniquely resolve world Item identifier "${identifier}" for "${name}".`
+        );
       }
 
       return {
@@ -339,7 +379,7 @@ function resolveComponent(option, resolvers, key) {
     throw new Error(`Unknown recipe component source "${option.source}" for "${option.name}".`);
   }
 
-  const doc = resolver(option.name);
+  const doc = resolver(option.name, option);
 
   return {
     id: stableId(`${key}|component|${option.source}|${option.name}`),

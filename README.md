@@ -11,7 +11,7 @@ The module currently manages:
 
 The Item compendium remains the runtime target so existing stable compendium UUIDs continue to work.
 
-## Version 0.2.0
+## Version 0.2.1
 
 The module now contains:
 
@@ -44,3 +44,7 @@ Individual passes are also available:
 - `scripts/sync.js`
 
 Managed documents should be edited in these source files rather than directly in Foundry. Increment the relevant `revision` whenever a managed record changes.
+
+
+### Ingredient source resolution
+Herbarium botanicals are distinguished from legacy KCTG world copies by `system.source.book = "Herbarium"`. Campaign spell-component resources are resolved by their D&D5e identifiers.
