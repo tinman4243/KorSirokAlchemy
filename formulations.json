@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "folder": "formulations",
+  "items": [
+    {
+      "id": "K3WlbDLbE6wsIlkz",
+      "name": "Quickstep Tonic",
+      "revision": 1,
+      "kind": "consumable",
+      "img": "icons/consumables/potions/bottle-round-corked-green.webp",
+      "priceGp": 25,
+      "weightLb": 0.5,
+      "identifier": "quickstep-tonic",
+      "description": "A bitter green tonic with a sharp herbal finish that leaves the limbs light and restless.",
+      "effect": "As a bonus action, drink the tonic. Your walking speed increases by 10 feet for 10 minutes."
+    },
+    {
+      "id": "DTLVMG2Ais9CZIGW",
+      "name": "Battle Balm",
+      "revision": 1,
+      "kind": "consumable",
+      "img": "icons/consumables/potions/bottle-bulb-corked-orange.webp",
+      "priceGp": 50,
+      "weightLb": 0.5,
+      "identifier": "battle-balm",
+      "description": "A pungent medicinal balm that numbs pain, tightens the skin, and lends a brief reserve of fighting strength.",
+      "effect": "As a bonus action, apply the balm. You gain 2d6 + 2 temporary hit points. A creature cannot benefit from Battle Balm again until 24 hours have passed."
+    },
+    {
+      "id": "efgQywEU98y3dBt9",
+      "name": "Tanglefoot Flask",
+      "revision": 1,
+      "kind": "consumable",
+      "img": "icons/consumables/potions/bottle-bulb-corked-green.webp",
+      "priceGp": 35,
+      "weightLb": 1,
+      "identifier": "tanglefoot-flask",
+      "description": "A stoppered glass flask filled with an aggressively adhesive resin that spreads into fibrous strands when exposed to air.",
+      "effect": "As an action, throw the flask at a creature within 20 feet. The target must succeed on a DC 13 Dexterity saving throw or become Restrained. A restrained creature can use its action to make a DC 13 Strength check, ending the effect on a success."
+    },
+    {
+      "id": "mE4DGLNzdZkMSZSs",
+      "name": "Ironhide Salve",
+      "revision": 1,
+      "kind": "consumable",
+      "img": "icons/consumables/potions/bottle-bulb-corked-blue.webp",
+      "priceGp": 100,
+      "weightLb": 0.5,
+      "identifier": "ironhide-salve",
+      "description": "A dense gray salve flecked with crystalline grit. Once worked into the skin it hardens into an almost imperceptible protective film.",
+      "effect": "As an action, apply the salve. Your Armor Class increases by 1 for 1 minute."
+    },
+    {
+      "id": "rzi1jsxHVJnFWqWE",
+      "name": "Keenmind Draught",
+      "revision": 1,
+      "kind": "consumable",
+      "img": "icons/consumables/potions/bottle-corked-blue.webp",
+      "priceGp": 350,
+      "weightLb": 0.5,
+      "identifier": "keenmind-draught",
+      "description": "A silvery draught that seems perfectly still even when shaken. For a few moments after drinking it, thought and instinct become unnaturally precise.",
+      "effect": "As a bonus action, drink the draught. For 1 minute, whenever you make an ability check or saving throw, add 1d4 to the roll."
+    }
+  ]
+}

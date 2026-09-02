@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "revision": 1,
+  "folders": [
+    {
+      "id": "GYes9H1q5oVdxXRK",
+      "key": "source-materials",
+      "name": "Source Materials",
+      "parent": null,
+      "color": "#416A4E",
+      "revision": 1
+    },
+    {
+      "id": "hmOFRNH0nqs9lEjc",
+      "key": "wild-plants",
+      "name": "Wild Plants",
+      "parent": "source-materials",
+      "color": "#5F8F55",
+      "revision": 1
+    },
+    {
+      "id": "EtsXQ3DbwxVnvC3q",
+      "key": "fungi",
+      "name": "Fungi",
+      "parent": "source-materials",
+      "color": "#80654D",
+      "revision": 1
+    },
+    {
+      "id": "IkfN1GFrOXqLzRkO",
+      "key": "minerals-geological",
+      "name": "Minerals & Geological",
+      "parent": "source-materials",
+      "color": "#6A6F73",
+      "revision": 1
+    },
+    {
+      "id": "pJmHxI9ofqVRl0uZ",
+      "key": "agricultural-plants",
+      "name": "Agricultural Plants",
+      "parent": "source-materials",
+      "color": "#8D9A45",
+      "revision": 1
+    },
+    {
+      "id": "p5kpc5G6w2paQwSV",
+      "key": "wild-animal-products",
+      "name": "Wild Animal Products",
+      "parent": "source-materials",
+      "color": "#8B674B",
+      "revision": 1
+    },
+    {
+      "id": "i0cuVlHZoSYnPEOq",
+      "key": "domestic-animal-products",
+      "name": "Domestic Animal Products",
+      "parent": "source-materials",
+      "color": "#A07B62",
+      "revision": 1
+    },
+    {
+      "id": "Mwfi1nkLMcd3a8IX",
+      "key": "processed-derived",
+      "name": "Processed & Derived",
+      "parent": "source-materials",
+      "color": "#7E6A8C",
+      "revision": 1
+    },
+    {
+      "id": "XpLKhKu4hZv080Vb",
+      "key": "natural-waters",
+      "name": "Natural Waters",
+      "parent": "source-materials",
+      "color": "#4B7F9C",
+      "revision": 1
+    },
+    {
+      "id": "Ho8gtN9pIeegfXqY",
+      "key": "special-esoteric",
+      "name": "Special & Esoteric",
+      "parent": "source-materials",
+      "color": "#76538C",
+      "revision": 1
+    },
+    {
+      "id": "fgQ8vprThhMX7K4j",
+      "key": "alchemy",
+      "name": "Alchemy",
+      "parent": null,
+      "color": "#7A5F32",
+      "revision": 1
+    },
+    {
+      "id": "T2NR1uf4Ekf8TdWH",
+      "key": "foundations",
+      "name": "Foundations",
+      "parent": "alchemy",
+      "color": "#7A5F32",
+      "revision": 1
+    },
+    {
+      "id": "WQdORzvy9jkiNA9Q",
+      "key": "formulations",
+      "name": "Formulations",
+      "parent": "alchemy",
+      "color": "#934F45",
+      "revision": 1
+    }
+  ]
+}

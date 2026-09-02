@@ -1,0 +1,2219 @@
+{
+  "schema": 1,
+  "revision": 1,
+  "policy": "One-time content import. After a source is copied, Kor Sirok owns its content; later syncs only maintain folder/classification metadata.",
+  "items": [
+    {
+      "sourceId": "MksuCA48IWJBmigz",
+      "targetId": "MksuCA48IWJBmigz",
+      "name": "Aconite",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "rare",
+        "herbariumBiomes": [
+          "Scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Rare"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Special"
+          }
+        ],
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "Medium",
+        "notes": "Herbarium puts it in scrubland; real-world wolfsbanes often favor cool/moist uplands, so dry-slope is the normal pool and wet foothills are exceptional."
+      }
+    },
+    {
+      "sourceId": "Papd7BJR0UAyBKZ0",
+      "targetId": "Papd7BJR0UAyBKZ0",
+      "name": "Agua Aurea",
+      "targetFolder": "processed-derived",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Derived only",
+        "herbariumRarity": "rare",
+        "herbariumBiomes": [],
+        "currentFocuses": [],
+        "primaryFocus": null,
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "Derived",
+        "notes": "Not a wild plant. It is collected rainwater from Lady's Mantle and should be produced by a special gathering/crafting interaction, not a plant table."
+      }
+    },
+    {
+      "sourceId": "ufLtqazhQPHyIKZj",
+      "targetId": "ufLtqazhQPHyIKZj",
+      "name": "Alder",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Scrubland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Riverbank & Floodplain",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Riverbank & Floodplain",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium says scrubland/woodland, but alder is strongly associated with wet soils and stream margins; riparian placement is intentional."
+      }
+    },
+    {
+      "sourceId": "YXMNx7lIn2j6Eu3l",
+      "targetId": "YXMNx7lIn2j6Eu3l",
+      "name": "Aloe",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "rare",
+        "herbariumBiomes": [
+          "Scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Rare"
+          }
+        ],
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "futureFocuses": [
+          "Arid Scrub & Desert"
+        ],
+        "upcomingRegionRelevance": "Low",
+        "notes": "A dryland succulent. Current dry-ridge placement is usable only in suitably arid regional zones."
+      }
+    },
+    {
+      "sourceId": "EdxDmUcCr9YOIeZ9",
+      "targetId": "EdxDmUcCr9YOIeZ9",
+      "name": "Anemone",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Wet Woodland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "nPtgaVIoN4pqmY27",
+      "targetId": "nPtgaVIoN4pqmY27",
+      "name": "Asphodel",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Coast",
+          "scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Coast & Littoral",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Rare"
+          }
+        ],
+        "primaryFocus": "Coast & Littoral",
+        "futureFocuses": [
+          "Arid Scrub & Desert"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Explicitly coastal and dry scrub; good fit for littoral and dry rocky ground."
+      }
+    },
+    {
+      "sourceId": "LLm5zX7GjgocRRXR",
+      "targetId": "LLm5zX7GjgocRRXR",
+      "name": "Azalea",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Mountain",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Wet Woodland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Cloud Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Wet Woodland",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Mountain/woodland shrub; especially suitable for moist acidic foothill and cloud-forest conditions."
+      }
+    },
+    {
+      "sourceId": "X66XUqUv3jp9JidN",
+      "targetId": "X66XUqUv3jp9JidN",
+      "name": "Banyan",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Coast",
+          "tropical forest"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Coast & Littoral",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Coast & Littoral",
+        "futureFocuses": [
+          "Tropical Lowland Forest"
+        ],
+        "upcomingRegionRelevance": "Low",
+        "notes": "The Coast tag is retained for warm tropical coasts, but it should not appear on cool/temperate coasts; lowland tropical forest is its main future focus."
+      }
+    },
+    {
+      "sourceId": "BT93CVg7z39SocWV",
+      "targetId": "BT93CVg7z39SocWV",
+      "name": "Belladonna",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Marshland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Riverbank & Floodplain",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Freshwater Wetland",
+            "tier": "Rare"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Riverbank & Floodplain",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium specifically associates it with damp shady sites and riversides; strong fit for riparian and damp woodland."
+      }
+    },
+    {
+      "sourceId": "ZcQ8U7vIJC3TOZuU",
+      "targetId": "ZcQ8U7vIJC3TOZuU",
+      "name": "Birch",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "ytcMk1428h6pmf5a",
+      "targetId": "ytcMk1428h6pmf5a",
+      "name": "Black Bryony",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Coast",
+          "scrubland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Coast & Littoral",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Coast, scrubland, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "kIH453JjkAT2rIDr",
+      "targetId": "kIH453JjkAT2rIDr",
+      "name": "Blackthorn",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Scrubland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Scrubland, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "m3Y0rgBzhcej1oeB",
+      "targetId": "m3Y0rgBzhcej1oeB",
+      "name": "Bluebell",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Farmland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Farmland, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "iwpN9GvvcPj0dtCC",
+      "targetId": "iwpN9GvvcPj0dtCC",
+      "name": "Boneset",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Marshland",
+          "scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Riverbank & Floodplain",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Freshwater Wetland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Rare"
+          }
+        ],
+        "primaryFocus": "Riverbank & Floodplain",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Marsh/scrub in Herbarium; real boneset strongly favors wet meadows and stream margins, so wetland/riparian are primary."
+      }
+    },
+    {
+      "sourceId": "zRDaK1coWGszBttW",
+      "targetId": "zRDaK1coWGszBttW",
+      "name": "Bread Moss",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Mountain",
+          "scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "Medium",
+        "notes": "A harsh-climate lichen; dry rocky slopes work in the current system, but a future alpine/high-mountain focus is better."
+      }
+    },
+    {
+      "sourceId": "y1jQPhDvetCX4scI",
+      "targetId": "y1jQPhDvetCX4scI",
+      "name": "Butterwort",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Marshland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Freshwater Wetland",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Freshwater Wetland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Marshland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "0XXhnMEXchhaqNRm",
+      "targetId": "0XXhnMEXchhaqNRm",
+      "name": "Calla Lily",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Marshland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Freshwater Wetland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Riverbank & Floodplain",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Freshwater Wetland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Marshland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "7Ro7EQWkSjAgR4yF",
+      "targetId": "7Ro7EQWkSjAgR4yF",
+      "name": "Camellia",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Mountain"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Cloud Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Wet Foothill Forest",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "Medium",
+        "notes": "Herbarium treats it as a mountain plant; use in moist cool highlands rather than generic dry mountains."
+      }
+    },
+    {
+      "sourceId": "fC1DtIfUtBrvgFiU",
+      "targetId": "fC1DtIfUtBrvgFiU",
+      "name": "Corpse Flower",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Special only",
+        "herbariumRarity": "veryRare",
+        "herbariumBiomes": [
+          "Tropical forest"
+        ],
+        "currentFocuses": [],
+        "primaryFocus": null,
+        "futureFocuses": [
+          "Tropical Lowland Forest"
+        ],
+        "upcomingRegionRelevance": "Outside current region",
+        "notes": "Very rare tropical-forest plant; keep out of ordinary current-region tables."
+      }
+    },
+    {
+      "sourceId": "iXIsQkO3rPvhWKQi",
+      "targetId": "iXIsQkO3rPvhWKQi",
+      "name": "Coyotillo",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "rare",
+        "herbariumBiomes": [
+          "Scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Rare"
+          }
+        ],
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "futureFocuses": [
+          "Arid Scrub & Desert"
+        ],
+        "upcomingRegionRelevance": "Low",
+        "notes": "Herbarium habitat: Scrubland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "bEvamApcZupwhTsN",
+      "targetId": "bEvamApcZupwhTsN",
+      "name": "Daisy",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Farmland",
+          "mountain",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground; Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Farmland, mountain, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "kE9u9UlDyPkuJ7mu",
+      "targetId": "kE9u9UlDyPkuJ7mu",
+      "name": "Darnel",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Farmland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Primarily a crop-field weed; open grassland is a fallback, but the proper long-term home is Farmland & Disturbed Ground."
+      }
+    },
+    {
+      "sourceId": "9HpIVfnCTcFxm9gx",
+      "targetId": "9HpIVfnCTcFxm9gx",
+      "name": "Datura",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "rare",
+        "herbariumBiomes": [
+          "Tropical forest"
+        ],
+        "currentFocuses": [],
+        "primaryFocus": null,
+        "futureFocuses": [
+          "Tropical Lowland Forest; Farmland & Disturbed Ground"
+        ],
+        "upcomingRegionRelevance": "Outside current region",
+        "notes": "Herbarium explicitly places it in tropical forest. Real Datura often favors disturbed ground, so a future regional implementation may support both."
+      }
+    },
+    {
+      "sourceId": "ZP5p5pp8R7QQtGoF",
+      "targetId": "ZP5p5pp8R7QQtGoF",
+      "name": "Dead Man's Skull",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "rare",
+        "herbariumBiomes": [
+          "Mountain",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Rare"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Rare"
+          },
+          {
+            "focus": "Cloud Forest",
+            "tier": "Rare"
+          }
+        ],
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "Medium",
+        "notes": "Cold-region lichen on branches and bones; use in cool highland woods/rock, not warm lowlands."
+      }
+    },
+    {
+      "sourceId": "KfUzIxNH33AN0Pp8",
+      "targetId": "KfUzIxNH33AN0Pp8",
+      "name": "Dragon's Blood Tree",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Special only",
+        "herbariumRarity": "veryRare",
+        "herbariumBiomes": [
+          "Mountain",
+          "tropical forest"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Special"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Special"
+          },
+          {
+            "focus": "Cloud Forest",
+            "tier": "Special"
+          }
+        ],
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "futureFocuses": [
+          "Tropical Lowland Forest; Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "Low",
+        "notes": "Very rare and strongly regional. Treat as a special find even where its mountain/tropical habitats are valid."
+      }
+    },
+    {
+      "sourceId": "05Ke6AYyj95NeaMh",
+      "targetId": "05Ke6AYyj95NeaMh",
+      "name": "Elder",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Mountain",
+          "scrubland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Mountain, scrubland, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "txTg60DabmWes2V9",
+      "targetId": "txTg60DabmWes2V9",
+      "name": "Ferns",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Tropical forest",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Common"
+          },
+          {
+            "focus": "Cloud Forest",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Wet Woodland",
+        "futureFocuses": [
+          "Tropical Lowland Forest"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Broadly useful damp-forest ingredient; common in wet woodland/foothill/cloud forest, with tropical lowland forest added later."
+      }
+    },
+    {
+      "sourceId": "IIqwv0JJZCflWW0B",
+      "targetId": "IIqwv0JJZCflWW0B",
+      "name": "Fly Agaric",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Marshland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Freshwater Wetland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Freshwater Wetland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Marshland, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "qGDHFpgsCaRsf6Al",
+      "targetId": "qGDHFpgsCaRsf6Al",
+      "name": "Foxglove",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Scrubland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Scrubland, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "C5UyWZb4uSsKmKSG",
+      "targetId": "C5UyWZb4uSsKmKSG",
+      "name": "Garlic",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Farmland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Farmland, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "DhN4Jax9szbEiRgR",
+      "targetId": "DhN4Jax9szbEiRgR",
+      "name": "Giant Hogweed",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Farmland",
+          "marshland",
+          "scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Riverbank & Floodplain",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Freshwater Wetland",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Explicitly an invasive ditch/field plant; riparian and wet margins fit well, with disturbed farmland as a future focus."
+      }
+    },
+    {
+      "sourceId": "RNgaVKYNaUqZgGOV",
+      "targetId": "RNgaVKYNaUqZgGOV",
+      "name": "Goblin Gold",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "rare",
+        "herbariumBiomes": [
+          "Marshland",
+          "mountain"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Freshwater Wetland",
+            "tier": "Rare"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Rare"
+          },
+          {
+            "focus": "Cloud Forest",
+            "tier": "Rare"
+          }
+        ],
+        "primaryFocus": "Freshwater Wetland",
+        "futureFocuses": [
+          "Cave & Subterranean; Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Dark damp caves and shady bogs. Wetland/highland use is valid, but a Cave & Subterranean focus would represent it best."
+      }
+    },
+    {
+      "sourceId": "p4TVFZOnmtnOPjOk",
+      "targetId": "p4TVFZOnmtnOPjOk",
+      "name": "Golden Jelly",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Common"
+          },
+          {
+            "focus": "Cloud Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Wet Woodland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "5RExkNo8O7U0U8y4",
+      "targetId": "5RExkNo8O7U0U8y4",
+      "name": "Hawthorn",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Farmland",
+          "scrubland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Farmland, scrubland, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "nsLpmoCXeZDkRi9c",
+      "targetId": "nsLpmoCXeZDkRi9c",
+      "name": "Hellebore",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Wet Woodland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Wet Woodland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "nHVz75Wb8pY75shJ",
+      "targetId": "nHVz75Wb8pY75shJ",
+      "name": "Henbane",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Coast",
+          "mountain",
+          "scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Coast & Littoral",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Rare"
+          }
+        ],
+        "primaryFocus": "Coast & Littoral",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Coast, mountain, scrubland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "kdZCRy4iEvSj1G67",
+      "targetId": "kdZCRy4iEvSj1G67",
+      "name": "Inky Cap",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Scrubland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Scrubland, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "xPjkp1YB30U3ZJS5",
+      "targetId": "xPjkp1YB30U3ZJS5",
+      "name": "Ivy",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Farmland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Farmland, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "aBo1szAStJTr31rD",
+      "targetId": "aBo1szAStJTr31rD",
+      "name": "Juniper",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Mountain",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Rare"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Mountain, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "ozlGGSx0GReX1JHg",
+      "targetId": "ozlGGSx0GReX1JHg",
+      "name": "Lady's Mantle",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "rare",
+        "herbariumBiomes": [
+          "Woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Wet Woodland",
+            "tier": "Rare"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Rare"
+          },
+          {
+            "focus": "Riverbank & Floodplain",
+            "tier": "Special"
+          }
+        ],
+        "primaryFocus": "Wet Woodland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Woodland rarity retained. Riparian occurrence is deliberately exceptional rather than normal."
+      }
+    },
+    {
+      "sourceId": "TBlcNehVaONrMHzw",
+      "targetId": "TBlcNehVaONrMHzw",
+      "name": "Lion's Mane",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Wet Woodland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Deadwood fungus, especially on oak/walnut; only makes sense where mature hardwood deadwood is present."
+      }
+    },
+    {
+      "sourceId": "8QWyKSV18bpDOQQJ",
+      "targetId": "8QWyKSV18bpDOQQJ",
+      "name": "Mandrake",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "rare",
+        "herbariumBiomes": [
+          "Mountain",
+          "scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Rare"
+          },
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Rare"
+          }
+        ],
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Mountain, scrubland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "2A1NtSEvbWMqQPOa",
+      "targetId": "2A1NtSEvbWMqQPOa",
+      "name": "Mistletoe",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Farmland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Farmland, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "e6RdUxd6G5Tk5IPG",
+      "targetId": "e6RdUxd6G5Tk5IPG",
+      "name": "Mountain Clubmoss",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Mountain",
+          "scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Rare"
+          },
+          {
+            "focus": "Cloud Forest",
+            "tier": "Rare"
+          }
+        ],
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "Medium",
+        "notes": "Primarily alpine/rocky. Cloud/foothill entries are secondary for cool, moist highlands."
+      }
+    },
+    {
+      "sourceId": "NCksQq5Boip28zIY",
+      "targetId": "NCksQq5Boip28zIY",
+      "name": "Mugwort",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Farmland",
+          "scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Farmland, scrubland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "GQdVRxKc4Y0ilGLd",
+      "targetId": "GQdVRxKc4Y0ilGLd",
+      "name": "Mulberry",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Farmland",
+          "mountain"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Rare"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground; Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Farmland, mountain. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "TgHvcO44ECPPcuts",
+      "targetId": "TgHvcO44ECPPcuts",
+      "name": "Oak",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Farmland",
+          "scrubland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Farmland, scrubland, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "hTpUX7puNxxd4XDo",
+      "targetId": "hTpUX7puNxxd4XDo",
+      "name": "Ocotillo",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Coast",
+          "scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Common"
+          },
+          {
+            "focus": "Coast & Littoral",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "futureFocuses": [
+          "Arid Scrub & Desert"
+        ],
+        "upcomingRegionRelevance": "Low",
+        "notes": "Desert-fringe shrub. A dry ridge can host it only in arid regional zones; humid Clayward ridges should filter it out."
+      }
+    },
+    {
+      "sourceId": "oIw3NjMPm2cK1w9s",
+      "targetId": "oIw3NjMPm2cK1w9s",
+      "name": "Pimpernel",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Marshland",
+          "mountain",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Riverbank & Floodplain",
+            "tier": "Common"
+          },
+          {
+            "focus": "Freshwater Wetland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Common"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium gives marsh/mountain/woodland and describes mossy/grassy ground; intentionally broad across moist and open habitats."
+      }
+    },
+    {
+      "sourceId": "tu45oKItxj1iXDb0",
+      "targetId": "tu45oKItxj1iXDb0",
+      "name": "Poppy",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Coast",
+          "farmland",
+          "mountain",
+          "scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Common"
+          },
+          {
+            "focus": "Coast & Littoral",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground; Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Coast, farmland, mountain, scrubland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "PExxWRzlmGq0ew1T",
+      "targetId": "PExxWRzlmGq0ew1T",
+      "name": "Rattan",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Tropical forest"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Cloud Forest",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Rare"
+          }
+        ],
+        "primaryFocus": "Cloud Forest",
+        "futureFocuses": [
+          "Tropical Lowland Forest"
+        ],
+        "upcomingRegionRelevance": "Medium",
+        "notes": "Tropical climber; cloud-forest use assumes the Hercynian Forest's warm, jungle-like magical character."
+      }
+    },
+    {
+      "sourceId": "EMygmEkTYPXMEPFI",
+      "targetId": "EMygmEkTYPXMEPFI",
+      "name": "Roccella Tinctoria",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Common"
+          },
+          {
+            "focus": "Coast & Littoral",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "futureFocuses": [
+          "Arid Scrub & Desert"
+        ],
+        "upcomingRegionRelevance": "Medium",
+        "notes": "Dry rocky lichen with strong real-world maritime associations; fits both coastal rock and dry slopes."
+      }
+    },
+    {
+      "sourceId": "CsNl2xYzO3Z96uyb",
+      "targetId": "CsNl2xYzO3Z96uyb",
+      "name": "Rose",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Farmland",
+          "mountain",
+          "scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground; Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Farmland, mountain, scrubland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "pNlYSa1gXBzdIaZK",
+      "targetId": "pNlYSa1gXBzdIaZK",
+      "name": "Rowan",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Woodland",
+          "scrubland",
+          "mountain"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Common"
+          },
+          {
+            "focus": "Cloud Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Woodland, scrubland, mountain. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "JdykNsycQHMhq6qh",
+      "targetId": "JdykNsycQHMhq6qh",
+      "name": "Rubroboletus SPP.",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Marshland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Freshwater Wetland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Freshwater Wetland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Marshland, woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "RCEMPayI4PRQrCjW",
+      "targetId": "RCEMPayI4PRQrCjW",
+      "name": "Saguaro",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "futureFocuses": [
+          "Arid Scrub & Desert"
+        ],
+        "upcomingRegionRelevance": "Low",
+        "notes": "Desert cactus. Current dry-ridge membership is regional-only and must be filtered out of humid zones."
+      }
+    },
+    {
+      "sourceId": "3zLmBjHxV0Q3bFTC",
+      "targetId": "3zLmBjHxV0Q3bFTC",
+      "name": "Sandbox Tree",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Special only",
+        "herbariumRarity": "veryRare",
+        "herbariumBiomes": [
+          "Tropical forest"
+        ],
+        "currentFocuses": [],
+        "primaryFocus": null,
+        "futureFocuses": [
+          "Tropical Lowland Forest"
+        ],
+        "upcomingRegionRelevance": "Outside current region",
+        "notes": "Herbarium habitat: Tropical forest. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "SLZSvj4i2ImubNXl",
+      "targetId": "SLZSvj4i2ImubNXl",
+      "name": "Scarlet Fey Cup",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Common"
+          },
+          {
+            "focus": "Cloud Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Wet Woodland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Woodland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "YvhwUpyFNHQXTSqm",
+      "targetId": "YvhwUpyFNHQXTSqm",
+      "name": "Seaweed",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Coast"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Coast & Littoral",
+            "tier": "Common"
+          },
+          {
+            "focus": "Estuary & Salt Marsh",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Coast & Littoral",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "Medium",
+        "notes": "The one Herbarium ingredient that naturally fills both open coast and brackish/tidal estuary gathering."
+      }
+    },
+    {
+      "sourceId": "Iq4LXNpbH2afjGso",
+      "targetId": "Iq4LXNpbH2afjGso",
+      "name": "Shitake",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Marshland",
+          "mountain"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Riverbank & Floodplain",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Freshwater Wetland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Common"
+          },
+          {
+            "focus": "Cloud Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Riverbank & Floodplain",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium says marshland/mountain; ecology suggests moist hardwood forest/deadwood, so wet foothill woodland is treated as the best current focus."
+      }
+    },
+    {
+      "sourceId": "r6SW7nffko3F8F3P",
+      "targetId": "r6SW7nffko3F8F3P",
+      "name": "Snapdragon",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Scrubland",
+          "mountain"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Rare"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Scrubland, mountain. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "iTXiab4BkNGzafmF",
+      "targetId": "iTXiab4BkNGzafmF",
+      "name": "Sphagnum Moss",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Marshland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Freshwater Wetland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Cloud Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Freshwater Wetland",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Freshwater bog plant. Cloud-forest entry is secondary and assumes saturated high-elevation boggy ground."
+      }
+    },
+    {
+      "sourceId": "T630chWSclFiZ0Dv",
+      "targetId": "T630chWSclFiZ0Dv",
+      "name": "Thyme",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Farmland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium says farmland/woodland, while many thymes prefer dry open rocky ground; both open grassland and dry slope are useful."
+      }
+    },
+    {
+      "sourceId": "D4A0aUWcHTFRZuVE",
+      "targetId": "D4A0aUWcHTFRZuVE",
+      "name": "Upas Tree",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Quest only",
+        "herbariumRarity": "legendary",
+        "herbariumBiomes": [
+          "Tropical forest"
+        ],
+        "currentFocuses": [],
+        "primaryFocus": null,
+        "futureFocuses": [
+          "Tropical Lowland Forest"
+        ],
+        "upcomingRegionRelevance": "Outside current region",
+        "notes": "Legendary tropical-forest encounter, not a normal forage result."
+      }
+    },
+    {
+      "sourceId": "dOShVpz6S5zAsMRV",
+      "targetId": "dOShVpz6S5zAsMRV",
+      "name": "Verbena",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Marshland",
+          "mountain",
+          "scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Riverbank & Floodplain",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Freshwater Wetland",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Marshland, mountain, scrubland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    },
+    {
+      "sourceId": "OIozFeV89D1net7u",
+      "targetId": "OIozFeV89D1net7u",
+      "name": "Willow",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Marshland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Riverbank & Floodplain",
+            "tier": "Common"
+          },
+          {
+            "focus": "Freshwater Wetland",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Riverbank & Floodplain",
+        "futureFocuses": [],
+        "upcomingRegionRelevance": "High",
+        "notes": "Classic riverbank/marsh tree; strong riparian/freshwater-wetland fit."
+      }
+    },
+    {
+      "sourceId": "f9uiipYFDiJ8Gea5",
+      "targetId": "f9uiipYFDiJ8Gea5",
+      "name": "Yarrow",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Mountain",
+          "scrubland",
+          "woodland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Common"
+          },
+          {
+            "focus": "Riverbank & Floodplain",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Foothill Forest",
+            "tier": "Common"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Broad, hardy plant across meadow, scrub and woodland; one of the most reusable ingredients in the upcoming region."
+      }
+    },
+    {
+      "sourceId": "oOztfKTQqduZkHbK",
+      "targetId": "oOztfKTQqduZkHbK",
+      "name": "Yellow Lichen",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "uncommon",
+        "herbariumBiomes": [
+          "Mountain"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Uncommon"
+          },
+          {
+            "focus": "Cloud Forest",
+            "tier": "Rare"
+          }
+        ],
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "futureFocuses": [
+          "Alpine & High Mountain"
+        ],
+        "upcomingRegionRelevance": "Medium",
+        "notes": "Clean-air high-elevation lichen; dry rocky highlands are primary, cloud forest only at exposed high clean sites."
+      }
+    },
+    {
+      "sourceId": "tMqGCcKi8mc1ffRB",
+      "targetId": "tMqGCcKi8mc1ffRB",
+      "name": "Yew",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "herbariumRarity": "common",
+        "herbariumBiomes": [
+          "Farmland",
+          "scrubland"
+        ],
+        "currentFocuses": [
+          {
+            "focus": "Open Woodland & Grassland",
+            "tier": "Common"
+          },
+          {
+            "focus": "Dry Ridge & Rocky Slope",
+            "tier": "Common"
+          },
+          {
+            "focus": "Wet Woodland",
+            "tier": "Uncommon"
+          }
+        ],
+        "primaryFocus": "Open Woodland & Grassland",
+        "futureFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "upcomingRegionRelevance": "High",
+        "notes": "Herbarium habitat: Farmland, scrubland. Current focus assignments follow the item habitat tags and prose; secondary habitats are generally one rarity step less common."
+      }
+    }
+  ]
+}

@@ -1,0 +1,628 @@
+{
+  "schema": 2,
+  "book": {
+    "id": "ClJ3azQsTv7s9vbZ",
+    "name": "The First Principles of Practical Alchemy",
+    "revision": 3,
+    "description": "A practical workshop primer covering the preparation of common alchemical media and a selection of reliable field formulations.",
+    "img": "icons/tools/laboratory/alembic-glass-ball-blue.webp",
+    "ingredientsInspection": "1",
+    "productInspection": "1",
+    "require": "",
+    "recipes": [
+      {
+        "id": "Kr7stnmO4pCDeHEH",
+        "name": "Rectified Spirit",
+        "revision": 3,
+        "img": "icons/consumables/potions/bottle-corked-blue.webp",
+        "instructions": "Ferment a clean source of sugar or starch in spring water, then repeatedly distill the wash until a nearly neutral, high-proof spirit remains. Choose one fermentable base; wild yeast and ordinary fuel are abstracted into the process.",
+        "time": 4320,
+        "yield": 3,
+        "require": "Alchemist's Supplies",
+        "ingredients": [
+          {
+            "name": "Fermentable Base",
+            "options": [
+              {
+                "source": "kctg",
+                "name": "Sugar Beet",
+                "quantity": 4
+              },
+              {
+                "source": "kctg",
+                "name": "Grapes",
+                "quantity": 4
+              },
+              {
+                "source": "kctg",
+                "name": "Plum",
+                "quantity": 5
+              },
+              {
+                "source": "kctg",
+                "name": "Date Fruit",
+                "quantity": 2
+              },
+              {
+                "source": "kctg",
+                "name": "Potato",
+                "quantity": 6
+              }
+            ]
+          },
+          {
+            "name": "Water",
+            "options": [
+              {
+                "source": "kctg",
+                "name": "Spring Water",
+                "quantity": 2
+              }
+            ]
+          }
+        ],
+        "products": [
+          {
+            "source": "alchemy",
+            "name": "Rectified Spirit",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "id": "S2OyARxzGkvYFMo3",
+        "name": "Alcohest",
+        "revision": 3,
+        "img": "icons/consumables/potions/bottle-metal-yellow-gray.webp",
+        "instructions": "Further rectify strong spirit over natron, then fix the final distillate with powdered gold. The result is a solvent capable of holding essences that ordinary alcohol cannot reliably suspend.",
+        "time": 1440,
+        "yield": 1,
+        "require": "Alchemist's Supplies",
+        "ingredients": [
+          {
+            "options": [
+              {
+                "source": "alchemy",
+                "name": "Rectified Spirit",
+                "quantity": 2
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "kctg",
+                "name": "Natron",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "worldIdentifier",
+                "name": "Gold Powder (25gp)",
+                "quantity": 1,
+                "identifier": "gold-powder-25gp"
+              }
+            ]
+          }
+        ],
+        "products": [
+          {
+            "source": "alchemy",
+            "name": "Alcohest",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "F1XdkENQSK4sr0hP",
+        "name": "Distilled Water",
+        "revision": 3,
+        "img": "icons/consumables/potions/bottle-corked-blue.webp",
+        "instructions": "Boil clean spring water and collect only the condensed vapor, leaving sediment and mineral salts behind.",
+        "time": 120,
+        "yield": 2,
+        "require": "Alchemist's Supplies",
+        "ingredients": [
+          {
+            "options": [
+              {
+                "source": "kctg",
+                "name": "Spring Water",
+                "quantity": 2
+              }
+            ]
+          }
+        ],
+        "products": [
+          {
+            "source": "alchemy",
+            "name": "Distilled Water",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "V1Epg3HzdcTBF4yd",
+        "name": "Sharp Vinegar",
+        "revision": 3,
+        "img": "icons/consumables/potions/bottle-corked-blue.webp",
+        "instructions": "Expose a suitable brewed drink to a strong vinegar culture and allow it to sour fully before straining and concentrating it for workshop use. Choose one alcoholic base.",
+        "time": 2880,
+        "yield": 2,
+        "require": "Alchemist's Supplies",
+        "ingredients": [
+          {
+            "name": "Alcoholic Base",
+            "options": [
+              {
+                "source": "kctg",
+                "name": "Ale",
+                "quantity": 2
+              },
+              {
+                "source": "kctg",
+                "name": "Beer",
+                "quantity": 2
+              },
+              {
+                "source": "kctg",
+                "name": "Mead",
+                "quantity": 2
+              }
+            ]
+          }
+        ],
+        "products": [
+          {
+            "source": "alchemy",
+            "name": "Sharp Vinegar",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "4EOxLOFmLIuYGcrt",
+        "name": "Pressed Oil",
+        "revision": 3,
+        "img": "icons/consumables/potions/bottle-corked-blue.webp",
+        "instructions": "Crush and press an oil-rich fruit, nut, or seed, then settle and strain the result until a clean neutral carrier oil remains. Choose one oil source.",
+        "time": 240,
+        "yield": 2,
+        "require": "Alchemist's Supplies",
+        "ingredients": [
+          {
+            "name": "Oil Source",
+            "options": [
+              {
+                "source": "kctg",
+                "name": "Green Olive",
+                "quantity": 4
+              },
+              {
+                "source": "kctg",
+                "name": "Almond",
+                "quantity": 6
+              },
+              {
+                "source": "kctg",
+                "name": "Runner Peanut",
+                "quantity": 6
+              },
+              {
+                "source": "kctg",
+                "name": "Seeds - Sunflower",
+                "quantity": 6
+              },
+              {
+                "source": "kctg",
+                "name": "Coconut",
+                "quantity": 2
+              }
+            ]
+          }
+        ],
+        "products": [
+          {
+            "source": "alchemy",
+            "name": "Pressed Oil",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "ymr8ap08YVdLFNfW",
+        "name": "Honey Syrup",
+        "revision": 3,
+        "img": "icons/consumables/potions/bottle-corked-blue.webp",
+        "instructions": "Clarify honey with purified water and reduce it slowly into a smooth, stable syrup suitable for suspending powders and bitter medicines.",
+        "time": 120,
+        "yield": 2,
+        "require": "Alchemist's Supplies",
+        "ingredients": [
+          {
+            "options": [
+              {
+                "source": "kctg",
+                "name": "Honey",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "alchemy",
+                "name": "Distilled Water",
+                "quantity": 1
+              }
+            ]
+          }
+        ],
+        "products": [
+          {
+            "source": "alchemy",
+            "name": "Honey Syrup",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "9GEskb55LbhEmxxA",
+        "name": "Resinous Binder",
+        "revision": 3,
+        "img": "icons/consumables/potions/bottle-metal-yellow-gray.webp",
+        "instructions": "Dissolve and purify aromatic resin in rectified spirit, then reduce it until a tacky binder remains that stays workable in a sealed vessel.",
+        "time": 480,
+        "yield": 6,
+        "require": "Alchemist's Supplies",
+        "ingredients": [
+          {
+            "options": [
+              {
+                "source": "kctg",
+                "name": "Myrrh",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "alchemy",
+                "name": "Rectified Spirit",
+                "quantity": 1
+              }
+            ]
+          }
+        ],
+        "products": [
+          {
+            "source": "alchemy",
+            "name": "Resinous Binder",
+            "quantity": 6
+          }
+        ]
+      },
+      {
+        "id": "R680QyC7y2i4EuHr",
+        "name": "Medicinal Charcoal",
+        "revision": 3,
+        "img": "icons/svg/item-bag.svg",
+        "instructions": "Char suitable clean wood in a restricted draft, then grind, wash, and dry the resulting charcoal until it is fit for medicinal and filtering work. Choose one wood source.",
+        "time": 480,
+        "yield": 4,
+        "require": "Alchemist's Supplies",
+        "ingredients": [
+          {
+            "name": "Clean Wood",
+            "options": [
+              {
+                "source": "kctg",
+                "name": "Aspen Log",
+                "quantity": 1
+              },
+              {
+                "source": "kctg",
+                "name": "Birch Log",
+                "quantity": 1
+              },
+              {
+                "source": "kctg",
+                "name": "Maple Log",
+                "quantity": 1
+              },
+              {
+                "source": "kctg",
+                "name": "Oak Log",
+                "quantity": 1
+              }
+            ]
+          }
+        ],
+        "products": [
+          {
+            "source": "alchemy",
+            "name": "Medicinal Charcoal",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "id": "YrcRMEhFyCv9P8Wy",
+        "name": "Unguent Base",
+        "revision": 3,
+        "img": "icons/svg/item-bag.svg",
+        "instructions": "Warm clean pressed oil with rendered fat until the mixture combines, then cool and work it into a smooth neutral ointment base.",
+        "time": 240,
+        "yield": 3,
+        "require": "Alchemist's Supplies",
+        "ingredients": [
+          {
+            "options": [
+              {
+                "source": "alchemy",
+                "name": "Pressed Oil",
+                "quantity": 2
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "kctg",
+                "name": "Fat Candles",
+                "quantity": 1
+              }
+            ]
+          }
+        ],
+        "products": [
+          {
+            "source": "alchemy",
+            "name": "Unguent Base",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "id": "zyfHTIl3NcsRMjtJ",
+        "name": "Quickstep Tonic",
+        "revision": 3,
+        "img": "icons/consumables/potions/bottle-round-corked-green.webp",
+        "instructions": "Bruise mugwort and steep it in rectified spirit, then draw off and temper the most stimulating fraction.",
+        "effect": "As a bonus action, drink the tonic. Your walking speed increases by 10 feet for 10 minutes.",
+        "time": 480,
+        "yield": 1,
+        "require": "Alchemist's Supplies",
+        "ingredients": [
+          {
+            "options": [
+              {
+                "source": "herbarium",
+                "name": "Mugwort",
+                "quantity": 2
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "alchemy",
+                "name": "Rectified Spirit",
+                "quantity": 1
+              }
+            ]
+          }
+        ],
+        "products": [
+          {
+            "source": "alchemy",
+            "name": "Quickstep Tonic",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "D03dny6XeaYPDCem",
+        "name": "Battle Balm",
+        "revision": 3,
+        "img": "icons/consumables/potions/bottle-bulb-corked-orange.webp",
+        "instructions": "Work yarrow and lion's mane into a warm unguent base until their restorative principles are evenly suspended.",
+        "effect": "As a bonus action, apply the balm. You gain 2d6 + 2 temporary hit points. A creature cannot benefit from Battle Balm again until 24 hours have passed.",
+        "time": 720,
+        "yield": 1,
+        "require": "Alchemist's Supplies",
+        "ingredients": [
+          {
+            "options": [
+              {
+                "source": "herbarium",
+                "name": "Yarrow",
+                "quantity": 2
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "herbarium",
+                "name": "Lion's Mane",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "alchemy",
+                "name": "Unguent Base",
+                "quantity": 1
+              }
+            ]
+          }
+        ],
+        "products": [
+          {
+            "source": "alchemy",
+            "name": "Battle Balm",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "WzdB4Hl2K3UqSDxy",
+        "name": "Tanglefoot Flask",
+        "revision": 3,
+        "img": "icons/consumables/potions/bottle-bulb-corked-green.webp",
+        "instructions": "Macerate bluebell into resinous binder, then seal the reactive mixture in a breakable glass vessel.",
+        "effect": "As an action, throw the flask at a creature within 20 feet. The target must succeed on a DC 13 Dexterity saving throw or become Restrained. A restrained creature can use its action to make a DC 13 Strength check, ending the effect on a success.",
+        "time": 240,
+        "yield": 1,
+        "require": "Alchemist's Supplies",
+        "ingredients": [
+          {
+            "options": [
+              {
+                "source": "herbarium",
+                "name": "Bluebell",
+                "quantity": 2
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "alchemy",
+                "name": "Resinous Binder",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "kctg",
+                "name": "Glass",
+                "quantity": 1
+              }
+            ]
+          }
+        ],
+        "products": [
+          {
+            "source": "alchemy",
+            "name": "Tanglefoot Flask",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "oMSGf8DXi2INzrjO",
+        "name": "Ironhide Salve",
+        "revision": 3,
+        "img": "icons/consumables/potions/bottle-bulb-corked-blue.webp",
+        "instructions": "Grind dead man's skull and yarrow together with diamond dust, then work the powder into an unguent until the mixture takes on a dense gray sheen.",
+        "effect": "As an action, apply the salve. Your Armor Class increases by 1 for 1 minute.",
+        "time": 1440,
+        "yield": 1,
+        "require": "Alchemist's Supplies",
+        "ingredients": [
+          {
+            "options": [
+              {
+                "source": "herbarium",
+                "name": "Dead Man's Skull",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "herbarium",
+                "name": "Yarrow",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "worldIdentifier",
+                "name": "Diamond Dust (25gp)",
+                "quantity": 1,
+                "identifier": "diamond-dust-25gp"
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "alchemy",
+                "name": "Unguent Base",
+                "quantity": 1
+              }
+            ]
+          }
+        ],
+        "products": [
+          {
+            "source": "alchemy",
+            "name": "Ironhide Salve",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "GpztRtxLF43rJR1J",
+        "name": "Keenmind Draught",
+        "revision": 3,
+        "img": "icons/consumables/potions/bottle-corked-blue.webp",
+        "instructions": "Dissolve a silver pearl into alcohest by alchemical means, then introduce lady's mantle and allow the draught to clarify until the metallic suspension becomes perfectly still.",
+        "effect": "As a bonus action, drink the draught. For 1 minute, whenever you make an ability check or saving throw, add 1d4 to the roll.",
+        "time": 4320,
+        "yield": 1,
+        "require": "Alchemist's Supplies",
+        "ingredients": [
+          {
+            "options": [
+              {
+                "source": "herbarium",
+                "name": "Lady's Mantle",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "kctg",
+                "name": "Silver Pearl",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "options": [
+              {
+                "source": "alchemy",
+                "name": "Alcohest",
+                "quantity": 1
+              }
+            ]
+          }
+        ],
+        "products": [
+          {
+            "source": "alchemy",
+            "name": "Keenmind Draught",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  }
+}
