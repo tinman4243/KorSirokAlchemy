@@ -1,0 +1,1056 @@
+{
+  "schema": 1,
+  "id": "hercynian-coastal-foreland",
+  "name": "Hercynian Coastal Foreland",
+  "zoneNumber": 1,
+  "description": "Humid warm-temperate/subtropical coastal foreland between the northern sea and the Hercynian uplands. Mixed open woodland and grassland dominate, with abundant rivers and wet valleys; localized wetlands and wet woodland occupy low ground, while exposed ridges are drier. The western boundary transitions rapidly toward arid country and the eastern boundary toward savannah.",
+  "botanicalFungalFocuses": {
+    "Open Woodland & Grassland": {
+      "Common": [
+        {
+          "name": "Birch",
+          "source": "herbarium",
+          "id": "ZcQ8U7vIJC3TOZuU"
+        },
+        {
+          "name": "Black Bryony",
+          "source": "herbarium",
+          "id": "ytcMk1428h6pmf5a"
+        },
+        {
+          "name": "Blackthorn",
+          "source": "herbarium",
+          "id": "kIH453JjkAT2rIDr"
+        },
+        {
+          "name": "Bluebell",
+          "source": "herbarium",
+          "id": "m3Y0rgBzhcej1oeB"
+        },
+        {
+          "name": "Daisy",
+          "source": "herbarium",
+          "id": "bEvamApcZupwhTsN"
+        },
+        {
+          "name": "Foxglove",
+          "source": "herbarium",
+          "id": "qGDHFpgsCaRsf6Al"
+        },
+        {
+          "name": "Hawthorn",
+          "source": "herbarium",
+          "id": "5RExkNo8O7U0U8y4"
+        },
+        {
+          "name": "Ivy",
+          "source": "herbarium",
+          "id": "xPjkp1YB30U3ZJS5"
+        },
+        {
+          "name": "Mistletoe",
+          "source": "herbarium",
+          "id": "2A1NtSEvbWMqQPOa"
+        },
+        {
+          "name": "Oak",
+          "source": "herbarium",
+          "id": "TgHvcO44ECPPcuts"
+        },
+        {
+          "name": "Pimpernel",
+          "source": "herbarium",
+          "id": "oIw3NjMPm2cK1w9s"
+        },
+        {
+          "name": "Poppy",
+          "source": "herbarium",
+          "id": "tu45oKItxj1iXDb0"
+        },
+        {
+          "name": "Rose",
+          "source": "herbarium",
+          "id": "CsNl2xYzO3Z96uyb"
+        },
+        {
+          "name": "Rowan",
+          "source": "herbarium",
+          "id": "pNlYSa1gXBzdIaZK"
+        },
+        {
+          "name": "Thyme",
+          "source": "herbarium",
+          "id": "T630chWSclFiZ0Dv"
+        },
+        {
+          "name": "Yarrow",
+          "source": "herbarium",
+          "id": "f9uiipYFDiJ8Gea5"
+        },
+        {
+          "name": "Yew",
+          "source": "herbarium",
+          "id": "tMqGCcKi8mc1ffRB"
+        },
+        {
+          "name": "Blewits",
+          "source": "kctg",
+          "id": "bILC2H1Q7Jw4qNTl"
+        },
+        {
+          "name": "Chamomile",
+          "source": "kctg",
+          "id": "Zs5FwcYIM2JiZDpR"
+        },
+        {
+          "name": "Clover",
+          "source": "kctg",
+          "id": "bxim0GYL9Fx9vAzL"
+        },
+        {
+          "name": "Dandelion",
+          "source": "kctg",
+          "id": "bupotZFG8mWmkLjG"
+        },
+        {
+          "name": "Field Mushroom",
+          "source": "kctg",
+          "id": "ZpwViMIqFv2jN7JN"
+        },
+        {
+          "name": "Gooseberries",
+          "source": "kctg",
+          "id": "8rWKESIBxaIYemZz"
+        },
+        {
+          "name": "Green-Spored Parasol",
+          "source": "kctg",
+          "id": "bIeY6d2mp2Qm2H6q"
+        },
+        {
+          "name": "Jack'o'lantern Mushroom",
+          "source": "kctg",
+          "id": "kplUnKzTG4QGm9ep"
+        },
+        {
+          "name": "Maple Sap",
+          "source": "kctg",
+          "id": "TwxUH8WvuVUvHpP8"
+        },
+        {
+          "name": "Puffball",
+          "source": "kctg",
+          "id": "jLlqWSYkxSpyv6At"
+        },
+        {
+          "name": "Purple Brittlegill",
+          "source": "kctg",
+          "id": "qnOJEmXmMIsAPFdT"
+        },
+        {
+          "name": "Toadstool",
+          "source": "kctg",
+          "id": "gZp2SeEjA2i4L17U"
+        },
+        {
+          "name": "Yellow Stainer",
+          "source": "kctg",
+          "id": "bh1wwHAXQgerWiGq"
+        }
+      ],
+      "Uncommon": [
+        {
+          "name": "Elder",
+          "source": "herbarium",
+          "id": "05Ke6AYyj95NeaMh"
+        },
+        {
+          "name": "Garlic",
+          "source": "herbarium",
+          "id": "C5UyWZb4uSsKmKSG"
+        },
+        {
+          "name": "Inky Cap",
+          "source": "herbarium",
+          "id": "kdZCRy4iEvSj1G67"
+        },
+        {
+          "name": "Mugwort",
+          "source": "herbarium",
+          "id": "NCksQq5Boip28zIY"
+        },
+        {
+          "name": "Mulberry",
+          "source": "herbarium",
+          "id": "GQdVRxKc4Y0ilGLd"
+        },
+        {
+          "name": "Snapdragon",
+          "source": "herbarium",
+          "id": "r6SW7nffko3F8F3P"
+        },
+        {
+          "name": "Verbena",
+          "source": "herbarium",
+          "id": "dOShVpz6S5zAsMRV"
+        },
+        {
+          "name": "Amanita Caesareae",
+          "source": "kctg",
+          "id": "rggXVcRebIH8KRtz"
+        },
+        {
+          "name": "Brute's Mace",
+          "source": "kctg",
+          "id": "lMT6mR287BzrF3tA"
+        },
+        {
+          "name": "Clustered Domecap",
+          "source": "kctg",
+          "id": "bnCmoRzpLO6pSmMO"
+        },
+        {
+          "name": "Death Cap",
+          "source": "kctg",
+          "id": "bhWT9nd20aCcEpad"
+        },
+        {
+          "name": "Divine Light",
+          "source": "kctg",
+          "id": "bcfPH9i2ydakYPGz"
+        },
+        {
+          "name": "Purple Berries",
+          "source": "kctg",
+          "id": "n9tHMLP4jdiBKGmQ"
+        },
+        {
+          "name": "Swine Snoot",
+          "source": "kctg",
+          "id": "bOdGpKL3FkFp9U0M"
+        },
+        {
+          "name": "The Flirt",
+          "source": "kctg",
+          "id": "bJ8Z3YwexT6xJlnZ"
+        },
+        {
+          "name": "The Sickener",
+          "source": "kctg",
+          "id": "nsKiHgiUDRpXYO31"
+        },
+        {
+          "name": "Verdigris Waxcap",
+          "source": "kctg",
+          "id": "iJeJi98iaj3Ed1p3"
+        },
+        {
+          "name": "Wood Lily",
+          "source": "kctg",
+          "id": "bhw2RqAkCK3bQsLr"
+        }
+      ],
+      "Rare": [
+        {
+          "name": "Henbane",
+          "source": "herbarium",
+          "id": "nHVz75Wb8pY75shJ"
+        },
+        {
+          "name": "Juniper",
+          "source": "herbarium",
+          "id": "aBo1szAStJTr31rD"
+        },
+        {
+          "name": "Mandrake",
+          "source": "herbarium",
+          "id": "8QWyKSV18bpDOQQJ"
+        },
+        {
+          "name": "Pink Waxcaps",
+          "source": "kctg",
+          "id": "bMGMSzVQRAoLh7Z1"
+        }
+      ]
+    },
+    "Riverbank & Floodplain": {
+      "Common": [
+        {
+          "name": "Pimpernel",
+          "source": "herbarium",
+          "id": "oIw3NjMPm2cK1w9s"
+        },
+        {
+          "name": "Willow",
+          "source": "herbarium",
+          "id": "OIozFeV89D1net7u"
+        },
+        {
+          "name": "Horsetail",
+          "source": "kctg",
+          "id": "bE66XVUn30PHqah9"
+        },
+        {
+          "name": "Maidenhair",
+          "source": "kctg",
+          "id": "sGIDmvHOnJTiTdFD"
+        },
+        {
+          "name": "Nettle",
+          "source": "kctg",
+          "id": "oXyRK8ZkoupCC7X5"
+        },
+        {
+          "name": "Wild Mint",
+          "source": "kctg",
+          "id": "tMHCMfbZJnHwbPKa"
+        }
+      ],
+      "Uncommon": [
+        {
+          "name": "Alder",
+          "source": "herbarium",
+          "id": "ufLtqazhQPHyIKZj"
+        },
+        {
+          "name": "Boneset",
+          "source": "herbarium",
+          "id": "iwpN9GvvcPj0dtCC"
+        },
+        {
+          "name": "Calla Lily",
+          "source": "herbarium",
+          "id": "0XXhnMEXchhaqNRm"
+        },
+        {
+          "name": "Giant Hogweed",
+          "source": "herbarium",
+          "id": "DhN4Jax9szbEiRgR"
+        },
+        {
+          "name": "Verbena",
+          "source": "herbarium",
+          "id": "dOShVpz6S5zAsMRV"
+        },
+        {
+          "name": "Yarrow",
+          "source": "herbarium",
+          "id": "f9uiipYFDiJ8Gea5"
+        },
+        {
+          "name": "Figworts",
+          "source": "kctg",
+          "id": "bqtFvyIR4g7GXLIp"
+        },
+        {
+          "name": "Myrica Gale",
+          "source": "kctg",
+          "id": "s9dOZOHtMagfSaoK"
+        },
+        {
+          "name": "Nerium",
+          "source": "kctg",
+          "id": "bttr4yCyBlWpTNYp"
+        },
+        {
+          "name": "Pennyroyal",
+          "source": "kctg",
+          "id": "migpGpay91FOAtIX"
+        },
+        {
+          "name": "Spicebush",
+          "source": "kctg",
+          "id": "6s6JJIbzUCRNyJ7v"
+        }
+      ],
+      "Rare": [
+        {
+          "name": "Belladonna",
+          "source": "herbarium",
+          "id": "BT93CVg7z39SocWV"
+        },
+        {
+          "name": "Goblin Gold",
+          "source": "herbarium",
+          "id": "RNgaVKYNaUqZgGOV"
+        },
+        {
+          "name": "Lady's Mantle",
+          "source": "herbarium",
+          "id": "ozlGGSx0GReX1JHg"
+        }
+      ]
+    },
+    "Wet Woodland": {
+      "Common": [
+        {
+          "name": "Anemone",
+          "source": "herbarium",
+          "id": "EdxDmUcCr9YOIeZ9"
+        },
+        {
+          "name": "Birch",
+          "source": "herbarium",
+          "id": "ZcQ8U7vIJC3TOZuU"
+        },
+        {
+          "name": "Black Bryony",
+          "source": "herbarium",
+          "id": "ytcMk1428h6pmf5a"
+        },
+        {
+          "name": "Bluebell",
+          "source": "herbarium",
+          "id": "m3Y0rgBzhcej1oeB"
+        },
+        {
+          "name": "Daisy",
+          "source": "herbarium",
+          "id": "bEvamApcZupwhTsN"
+        },
+        {
+          "name": "Ferns",
+          "source": "herbarium",
+          "id": "txTg60DabmWes2V9"
+        },
+        {
+          "name": "Foxglove",
+          "source": "herbarium",
+          "id": "qGDHFpgsCaRsf6Al"
+        },
+        {
+          "name": "Garlic",
+          "source": "herbarium",
+          "id": "C5UyWZb4uSsKmKSG"
+        },
+        {
+          "name": "Golden Jelly",
+          "source": "herbarium",
+          "id": "p4TVFZOnmtnOPjOk"
+        },
+        {
+          "name": "Hawthorn",
+          "source": "herbarium",
+          "id": "5RExkNo8O7U0U8y4"
+        },
+        {
+          "name": "Ivy",
+          "source": "herbarium",
+          "id": "xPjkp1YB30U3ZJS5"
+        },
+        {
+          "name": "Lion's Mane",
+          "source": "herbarium",
+          "id": "TBlcNehVaONrMHzw"
+        },
+        {
+          "name": "Mistletoe",
+          "source": "herbarium",
+          "id": "2A1NtSEvbWMqQPOa"
+        },
+        {
+          "name": "Oak",
+          "source": "herbarium",
+          "id": "TgHvcO44ECPPcuts"
+        },
+        {
+          "name": "Pimpernel",
+          "source": "herbarium",
+          "id": "oIw3NjMPm2cK1w9s"
+        },
+        {
+          "name": "Rowan",
+          "source": "herbarium",
+          "id": "pNlYSa1gXBzdIaZK"
+        },
+        {
+          "name": "Scarlet Fey Cup",
+          "source": "herbarium",
+          "id": "SLZSvj4i2ImubNXl"
+        },
+        {
+          "name": "Yarrow",
+          "source": "herbarium",
+          "id": "f9uiipYFDiJ8Gea5"
+        },
+        {
+          "name": "Blewits",
+          "source": "kctg",
+          "id": "bILC2H1Q7Jw4qNTl"
+        },
+        {
+          "name": "Gooseberries",
+          "source": "kctg",
+          "id": "8rWKESIBxaIYemZz"
+        },
+        {
+          "name": "Jack'o'lantern Mushroom",
+          "source": "kctg",
+          "id": "kplUnKzTG4QGm9ep"
+        },
+        {
+          "name": "Maidenhair",
+          "source": "kctg",
+          "id": "sGIDmvHOnJTiTdFD"
+        },
+        {
+          "name": "Maple Sap",
+          "source": "kctg",
+          "id": "TwxUH8WvuVUvHpP8"
+        },
+        {
+          "name": "Nettle",
+          "source": "kctg",
+          "id": "oXyRK8ZkoupCC7X5"
+        },
+        {
+          "name": "Puffball",
+          "source": "kctg",
+          "id": "jLlqWSYkxSpyv6At"
+        },
+        {
+          "name": "Purple Brittlegill",
+          "source": "kctg",
+          "id": "qnOJEmXmMIsAPFdT"
+        },
+        {
+          "name": "Slippery Jack",
+          "source": "kctg",
+          "id": "OJtwXQxEk3oZe8Ml"
+        },
+        {
+          "name": "Toadstool",
+          "source": "kctg",
+          "id": "gZp2SeEjA2i4L17U"
+        },
+        {
+          "name": "Yellow Stainer",
+          "source": "kctg",
+          "id": "bh1wwHAXQgerWiGq"
+        }
+      ],
+      "Uncommon": [
+        {
+          "name": "Alder",
+          "source": "herbarium",
+          "id": "ufLtqazhQPHyIKZj"
+        },
+        {
+          "name": "Azalea",
+          "source": "herbarium",
+          "id": "LLm5zX7GjgocRRXR"
+        },
+        {
+          "name": "Belladonna",
+          "source": "herbarium",
+          "id": "BT93CVg7z39SocWV"
+        },
+        {
+          "name": "Blackthorn",
+          "source": "herbarium",
+          "id": "kIH453JjkAT2rIDr"
+        },
+        {
+          "name": "Elder",
+          "source": "herbarium",
+          "id": "05Ke6AYyj95NeaMh"
+        },
+        {
+          "name": "Fly Agaric",
+          "source": "herbarium",
+          "id": "IIqwv0JJZCflWW0B"
+        },
+        {
+          "name": "Hellebore",
+          "source": "herbarium",
+          "id": "nsLpmoCXeZDkRi9c"
+        },
+        {
+          "name": "Inky Cap",
+          "source": "herbarium",
+          "id": "kdZCRy4iEvSj1G67"
+        },
+        {
+          "name": "Rubroboletus SPP.",
+          "source": "herbarium",
+          "id": "JdykNsycQHMhq6qh"
+        },
+        {
+          "name": "Shitake",
+          "source": "herbarium",
+          "id": "Iq4LXNpbH2afjGso"
+        },
+        {
+          "name": "Yew",
+          "source": "herbarium",
+          "id": "tMqGCcKi8mc1ffRB"
+        },
+        {
+          "name": "Amanita Caesareae",
+          "source": "kctg",
+          "id": "rggXVcRebIH8KRtz"
+        },
+        {
+          "name": "Brute's Mace",
+          "source": "kctg",
+          "id": "lMT6mR287BzrF3tA"
+        },
+        {
+          "name": "Clustered Domecap",
+          "source": "kctg",
+          "id": "bnCmoRzpLO6pSmMO"
+        },
+        {
+          "name": "Death Cap",
+          "source": "kctg",
+          "id": "bhWT9nd20aCcEpad"
+        },
+        {
+          "name": "Elfin Saddle",
+          "source": "kctg",
+          "id": "8ehfsuZ1GiiXWUCq"
+        },
+        {
+          "name": "Figworts",
+          "source": "kctg",
+          "id": "bqtFvyIR4g7GXLIp"
+        },
+        {
+          "name": "Green Elf Cup",
+          "source": "kctg",
+          "id": "I27SwGSRDUYzS6jm"
+        },
+        {
+          "name": "Indigo Milkcap",
+          "source": "kctg",
+          "id": "ZJdjE8UhybrCNUxs"
+        },
+        {
+          "name": "King Bolete",
+          "source": "kctg",
+          "id": "bJZnsgsWnRKX9xdf"
+        },
+        {
+          "name": "Lobster Mushroom",
+          "source": "kctg",
+          "id": "tApkXyo59l1Jq4Qb"
+        },
+        {
+          "name": "Neon-Ront",
+          "source": "kctg",
+          "id": "bcit91iVe28TDg6x"
+        },
+        {
+          "name": "Old Man Of The Woods",
+          "source": "kctg",
+          "id": "fDtLsZN0Zib2PYKW"
+        },
+        {
+          "name": "Pixie\u2019s Parasol",
+          "source": "kctg",
+          "id": "bpp2811NEKAoCAtB"
+        },
+        {
+          "name": "Primrose Brittlegill",
+          "source": "kctg",
+          "id": "rKyYuRiBFftaxN4J"
+        },
+        {
+          "name": "Purple Berries",
+          "source": "kctg",
+          "id": "n9tHMLP4jdiBKGmQ"
+        },
+        {
+          "name": "Questionable Stropharia",
+          "source": "kctg",
+          "id": "crBuk25g1rrHMpKZ"
+        },
+        {
+          "name": "Spicebush",
+          "source": "kctg",
+          "id": "6s6JJIbzUCRNyJ7v"
+        },
+        {
+          "name": "Swine Snoot",
+          "source": "kctg",
+          "id": "bOdGpKL3FkFp9U0M"
+        },
+        {
+          "name": "The Flirt",
+          "source": "kctg",
+          "id": "bJ8Z3YwexT6xJlnZ"
+        },
+        {
+          "name": "The Sickener",
+          "source": "kctg",
+          "id": "nsKiHgiUDRpXYO31"
+        },
+        {
+          "name": "Verdigris Waxcap",
+          "source": "kctg",
+          "id": "iJeJi98iaj3Ed1p3"
+        },
+        {
+          "name": "Violet Webcap",
+          "source": "kctg",
+          "id": "HGQirgFair9k6OAH"
+        },
+        {
+          "name": "Wood Lily",
+          "source": "kctg",
+          "id": "bhw2RqAkCK3bQsLr"
+        }
+      ],
+      "Rare": [
+        {
+          "name": "Lady's Mantle",
+          "source": "herbarium",
+          "id": "ozlGGSx0GReX1JHg"
+        },
+        {
+          "name": "Blue Chanterelle",
+          "source": "kctg",
+          "id": "bA9XK6pclA0VOIr9"
+        },
+        {
+          "name": "Funeral Bell",
+          "source": "kctg",
+          "id": "dGz7y440o6mzEfvS"
+        },
+        {
+          "name": "Gold-Drop Milkcap",
+          "source": "kctg",
+          "id": "R2GssMwS44swRWMr"
+        },
+        {
+          "name": "Last Hope Fire",
+          "source": "kctg",
+          "id": "Oqs5GAel9ZLeTYx2"
+        },
+        {
+          "name": "Matsutake",
+          "source": "kctg",
+          "id": "u59YCs3OxMMPLsW4"
+        },
+        {
+          "name": "Purple Emperor Mushroom",
+          "source": "kctg",
+          "id": "ARwDPnqRInpBdJ2f"
+        },
+        {
+          "name": "Roseoflava",
+          "source": "kctg",
+          "id": "btAC0y64adxZhshu"
+        },
+        {
+          "name": "Sky Blue",
+          "source": "kctg",
+          "id": "B3f1YJHSny2ANygJ"
+        },
+        {
+          "name": "Spiky Bloom",
+          "source": "kctg",
+          "id": "mH2fhAuGdSEzXd3q"
+        },
+        {
+          "name": "The Last Veiled Widow",
+          "source": "kctg",
+          "id": "bIJKhi74oG48sYf2"
+        },
+        {
+          "name": "Witchhat Mushroom",
+          "source": "kctg",
+          "id": "fWISglZGRzfXmt9j"
+        }
+      ]
+    },
+    "Freshwater Wetland": {
+      "Common": [
+        {
+          "name": "Pimpernel",
+          "source": "herbarium",
+          "id": "oIw3NjMPm2cK1w9s"
+        },
+        {
+          "name": "Sphagnum Moss",
+          "source": "herbarium",
+          "id": "iTXiab4BkNGzafmF"
+        },
+        {
+          "name": "Willow",
+          "source": "herbarium",
+          "id": "OIozFeV89D1net7u"
+        },
+        {
+          "name": "Horsetail",
+          "source": "kctg",
+          "id": "bE66XVUn30PHqah9"
+        },
+        {
+          "name": "Water Lily",
+          "source": "kctg",
+          "id": "zL97XNdHbovnmUed"
+        },
+        {
+          "name": "Wild Mint",
+          "source": "kctg",
+          "id": "tMHCMfbZJnHwbPKa"
+        }
+      ],
+      "Uncommon": [
+        {
+          "name": "Boneset",
+          "source": "herbarium",
+          "id": "iwpN9GvvcPj0dtCC"
+        },
+        {
+          "name": "Butterwort",
+          "source": "herbarium",
+          "id": "y1jQPhDvetCX4scI"
+        },
+        {
+          "name": "Calla Lily",
+          "source": "herbarium",
+          "id": "0XXhnMEXchhaqNRm"
+        },
+        {
+          "name": "Fly Agaric",
+          "source": "herbarium",
+          "id": "IIqwv0JJZCflWW0B"
+        },
+        {
+          "name": "Giant Hogweed",
+          "source": "herbarium",
+          "id": "DhN4Jax9szbEiRgR"
+        },
+        {
+          "name": "Rubroboletus SPP.",
+          "source": "herbarium",
+          "id": "JdykNsycQHMhq6qh"
+        },
+        {
+          "name": "Verbena",
+          "source": "herbarium",
+          "id": "dOShVpz6S5zAsMRV"
+        },
+        {
+          "name": "Myrica Gale",
+          "source": "kctg",
+          "id": "s9dOZOHtMagfSaoK"
+        },
+        {
+          "name": "Pennyroyal",
+          "source": "kctg",
+          "id": "migpGpay91FOAtIX"
+        }
+      ],
+      "Rare": [
+        {
+          "name": "Belladonna",
+          "source": "herbarium",
+          "id": "BT93CVg7z39SocWV"
+        },
+        {
+          "name": "Goblin Gold",
+          "source": "herbarium",
+          "id": "RNgaVKYNaUqZgGOV"
+        },
+        {
+          "name": "Lady's Mantle",
+          "source": "herbarium",
+          "id": "ozlGGSx0GReX1JHg"
+        }
+      ]
+    },
+    "Dry Ridge & Rocky Slope": {
+      "Common": [
+        {
+          "name": "Blackthorn",
+          "source": "herbarium",
+          "id": "kIH453JjkAT2rIDr"
+        },
+        {
+          "name": "Poppy",
+          "source": "herbarium",
+          "id": "tu45oKItxj1iXDb0"
+        },
+        {
+          "name": "Roccella Tinctoria",
+          "source": "herbarium",
+          "id": "EMygmEkTYPXMEPFI"
+        },
+        {
+          "name": "Rose",
+          "source": "herbarium",
+          "id": "CsNl2xYzO3Z96uyb"
+        },
+        {
+          "name": "Rowan",
+          "source": "herbarium",
+          "id": "pNlYSa1gXBzdIaZK"
+        },
+        {
+          "name": "Thyme",
+          "source": "herbarium",
+          "id": "T630chWSclFiZ0Dv"
+        },
+        {
+          "name": "Yarrow",
+          "source": "herbarium",
+          "id": "f9uiipYFDiJ8Gea5"
+        },
+        {
+          "name": "Yew",
+          "source": "herbarium",
+          "id": "tMqGCcKi8mc1ffRB"
+        },
+        {
+          "name": "Laurel",
+          "source": "kctg",
+          "id": "bOn9J63ngzPqFYq9"
+        }
+      ],
+      "Uncommon": [
+        {
+          "name": "Asphodel",
+          "source": "herbarium",
+          "id": "nPtgaVIoN4pqmY27"
+        },
+        {
+          "name": "Daisy",
+          "source": "herbarium",
+          "id": "bEvamApcZupwhTsN"
+        },
+        {
+          "name": "Elder",
+          "source": "herbarium",
+          "id": "05Ke6AYyj95NeaMh"
+        },
+        {
+          "name": "Foxglove",
+          "source": "herbarium",
+          "id": "qGDHFpgsCaRsf6Al"
+        },
+        {
+          "name": "Hawthorn",
+          "source": "herbarium",
+          "id": "5RExkNo8O7U0U8y4"
+        },
+        {
+          "name": "Henbane",
+          "source": "herbarium",
+          "id": "nHVz75Wb8pY75shJ"
+        },
+        {
+          "name": "Juniper",
+          "source": "herbarium",
+          "id": "aBo1szAStJTr31rD"
+        },
+        {
+          "name": "Mugwort",
+          "source": "herbarium",
+          "id": "NCksQq5Boip28zIY"
+        },
+        {
+          "name": "Pimpernel",
+          "source": "herbarium",
+          "id": "oIw3NjMPm2cK1w9s"
+        },
+        {
+          "name": "Snapdragon",
+          "source": "herbarium",
+          "id": "r6SW7nffko3F8F3P"
+        },
+        {
+          "name": "Verbena",
+          "source": "herbarium",
+          "id": "dOShVpz6S5zAsMRV"
+        },
+        {
+          "name": "Nerium",
+          "source": "kctg",
+          "id": "bttr4yCyBlWpTNYp"
+        }
+      ],
+      "Rare": [
+        {
+          "name": "Aconite",
+          "source": "herbarium",
+          "id": "MksuCA48IWJBmigz"
+        },
+        {
+          "name": "Mandrake",
+          "source": "herbarium",
+          "id": "8QWyKSV18bpDOQQJ"
+        },
+        {
+          "name": "Silphium",
+          "source": "kctg",
+          "id": "GK6fTdNz3mA9h3Cy"
+        }
+      ]
+    },
+    "Coast & Littoral": {
+      "Common": [
+        {
+          "name": "Poppy",
+          "source": "herbarium",
+          "id": "tu45oKItxj1iXDb0"
+        },
+        {
+          "name": "Roccella Tinctoria",
+          "source": "herbarium",
+          "id": "EMygmEkTYPXMEPFI"
+        },
+        {
+          "name": "Seaweed",
+          "source": "herbarium",
+          "id": "YvhwUpyFNHQXTSqm"
+        }
+      ],
+      "Uncommon": [
+        {
+          "name": "Asphodel",
+          "source": "herbarium",
+          "id": "nPtgaVIoN4pqmY27"
+        },
+        {
+          "name": "Black Bryony",
+          "source": "herbarium",
+          "id": "ytcMk1428h6pmf5a"
+        },
+        {
+          "name": "Henbane",
+          "source": "herbarium",
+          "id": "nHVz75Wb8pY75shJ"
+        }
+      ],
+      "Rare": [
+        {
+          "name": "Silphium",
+          "source": "kctg",
+          "id": "GK6fTdNz3mA9h3Cy"
+        }
+      ]
+    },
+    "Estuary & Salt Marsh": {
+      "Common": [
+        {
+          "name": "Seaweed",
+          "source": "herbarium",
+          "id": "YvhwUpyFNHQXTSqm"
+        },
+        {
+          "name": "Ocean River Strings",
+          "source": "kctg",
+          "id": "K8OL47iykOGrrgS0"
+        }
+      ],
+      "Uncommon": [],
+      "Rare": []
+    }
+  },
+  "revision": 1,
+  "discipline": "botanical-fungal",
+  "notes": "Regional filter for botanical/fungal gathering. Pool membership already reflects both ecological focus and regional plausibility; for example, desert species are excluded from locally dry ridges in this humid foreland."
+}

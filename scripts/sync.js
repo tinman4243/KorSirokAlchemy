@@ -3,10 +3,16 @@ const ITEM_PACK_ID = "world.kor-sirok-alchemy";
 const ITEM_PACK_NAME = "kor-sirok-alchemy";
 const ITEM_PACK_LABEL = "Kor Sirok — Alchemy";
 const KCTG_PACK_ID = "kctg-5e.kctg-dnd5e";
+const GATHERING_PACK_ID = "world.kor-sirok-gathering";
+const GATHERING_PACK_NAME = "kor-sirok-gathering";
+const GATHERING_PACK_LABEL = "Kor Sirok — Gathering Tables";
 const RECIPE_SOURCE = "data/recipes/introduction-to-alchemy.json";
 const FOLDER_SOURCE = "data/folders.json";
 const HERBARIUM_SOURCE = "data/sources/herbarium.json";
 const KCTG_SOURCE = "data/sources/kctg.json";
+const GATHERING_ZONE_SOURCES = [
+  "data/gathering/zones/hercynian-coastal-foreland.json"
+];
 const ITEM_SOURCES = [
   "data/items/foundations.json",
   "data/items/formulations.json"
@@ -34,6 +40,21 @@ async function ensureItemPack() {
     name: ITEM_PACK_NAME,
     label: ITEM_PACK_LABEL,
     type: "Item",
+    package: "world",
+    system: "dnd5e"
+  });
+}
+
+async function ensureGatheringPack() {
+  let pack = game.packs.get(GATHERING_PACK_ID);
+  if (pack) return pack;
+
+  console.log(`[${MODULE_ID}] Creating world RollTable compendium ${GATHERING_PACK_ID}.`);
+
+  return foundry.documents.collections.CompendiumCollection.createCompendium({
+    name: GATHERING_PACK_NAME,
+    label: GATHERING_PACK_LABEL,
+    type: "RollTable",
     package: "world",
     system: "dnd5e"
   });
@@ -744,6 +765,421 @@ function stableId(key) {
   return out;
 }
 
+async function ensureGatheringFolder(pack, { id, name, parentId = null, key, color = null, source, revision }) {
+  const folderCollection = pack.folders;
+  if (!folderCollection) {
+    throw new Error(
+      `Compendium ${pack.collection} does not expose its folder collection. ` +
+      `Kor Sirok Alchemy requires Foundry VTT 14 compendium-folder support.`
+    );
+  }
+
+  let folder = folderCollection.get(id);
+
+  if (!folder) {
+    const sameName = folderCollection.contents.filter(candidate =>
+      candidate.name === name && currentFolderId(candidate) === parentId
+    );
+
+    if (sameName.length > 1) {
+      throw new Error(
+        `Compendium ${pack.collection} contains multiple folders named "${name}" under the same parent.`
+      );
+    }
+
+    folder = sameName[0] ?? null;
+  }
+
+  const managedFlags = {
+    managed: true,
+    kind: "gathering-folder",
+    key,
+    source,
+    revision
+  };
+
+  if (!folder) {
+    folder = await Folder.create(
+      {
+        _id: id,
+        name,
+        type: "RollTable",
+        folder: parentId,
+        sorting: "a",
+        color,
+        flags: { [MODULE_ID]: managedFlags }
+      },
+      { pack: pack.collection, keepId: true }
+    );
+
+    return { folder, status: "created" };
+  }
+
+  const changes = {};
+  if (folder.name !== name) changes.name = name;
+  if (currentFolderId(folder) !== parentId) changes.folder = parentId;
+  if (folder.sorting !== "a") changes.sorting = "a";
+  if ((folder.color ?? null) !== color) changes.color = color;
+  if (!sameJson(folder.flags?.[MODULE_ID], managedFlags)) {
+    changes[`flags.${MODULE_ID}`] = managedFlags;
+  }
+
+  if (Object.keys(changes).length) {
+    await folder.update(changes);
+    return { folder, status: "updated" };
+  }
+
+  return { folder, status: "unchanged" };
+}
+
+async function syncGatheringZoneFolders(pack, zone, sourceFile) {
+  const counts = { created: 0, updated: 0, unchanged: 0 };
+  const note = status => counts[status]++;
+
+  const disciplineKey = zone.discipline ?? "botanical-fungal";
+  const disciplineName = disciplineKey === "botanical-fungal" ? "Botanical & Fungal" : disciplineKey;
+
+  const discipline = await ensureGatheringFolder(pack, {
+    id: stableId(`gathering-folder|discipline|${disciplineKey}`),
+    name: disciplineName,
+    parentId: null,
+    key: `discipline:${disciplineKey}`,
+    color: "#416A4E",
+    source: sourceFile,
+    revision: zone.revision ?? 1
+  });
+  note(discipline.status);
+
+  const zoneFolder = await ensureGatheringFolder(pack, {
+    id: stableId(`gathering-folder|zone|${disciplineKey}|${zone.id}`),
+    name: `Zone ${zone.zoneNumber} — ${zone.name}`,
+    parentId: discipline.folder.id,
+    key: `zone:${zone.id}`,
+    color: "#5F8F55",
+    source: sourceFile,
+    revision: zone.revision ?? 1
+  });
+  note(zoneFolder.status);
+
+  const focusFolders = new Map();
+  for (const focus of Object.keys(zone.botanicalFungalFocuses ?? {})) {
+    const focusFolder = await ensureGatheringFolder(pack, {
+      id: stableId(`gathering-folder|zone|${zone.id}|focus|${focus}`),
+      name: focus,
+      parentId: zoneFolder.folder.id,
+      key: `zone:${zone.id}:focus:${focus}`,
+      color: null,
+      source: sourceFile,
+      revision: zone.revision ?? 1
+    });
+    note(focusFolder.status);
+    focusFolders.set(focus, focusFolder.folder);
+  }
+
+  return { ...counts, focusFolders };
+}
+
+function gatheringTableId(zone, focus, tier) {
+  return stableId(`gathering-table|${zone.discipline ?? "botanical-fungal"}|${zone.id}|${focus}|${tier}`);
+}
+
+function gatheringResultId(tableId, targetId) {
+  return stableId(`gathering-result|${tableId}|${targetId}`);
+}
+
+function gatheringTableFlags(zone, focus, tier, sourceFile) {
+  return {
+    managed: true,
+    kind: "gathering-table",
+    source: sourceFile,
+    revision: zone.revision ?? 1,
+    discipline: zone.discipline ?? "botanical-fungal",
+    zone: {
+      id: zone.id,
+      number: zone.zoneNumber,
+      name: zone.name
+    },
+    focus,
+    tier
+  };
+}
+
+function tableResultDefinition(tableId, entry, item, index) {
+  return {
+    _id: gatheringResultId(tableId, entry.id),
+    name: item.name,
+    type: "document",
+    documentUuid: item.uuid,
+    img: item.img,
+    weight: 1,
+    range: [index + 1, index + 1],
+    drawn: false,
+    description: "",
+    flags: {
+      gatherer: { quantity: "1" },
+      [MODULE_ID]: {
+        managed: true,
+        targetItemId: entry.id,
+        sourceProvider: entry.source
+      }
+    }
+  };
+}
+
+function sameGatheringResult(existing, desired) {
+  return (
+    existing.name === desired.name &&
+    existing.type === desired.type &&
+    existing.documentUuid === desired.documentUuid &&
+    existing.img === desired.img &&
+    Number(existing.weight) === desired.weight &&
+    sameJson(existing.range, desired.range) &&
+    (existing.description ?? "") === desired.description &&
+    sameJson(existing.flags?.gatherer, desired.flags?.gatherer) &&
+    sameJson(existing.flags?.[MODULE_ID], desired.flags?.[MODULE_ID])
+  );
+}
+
+async function syncGatheringTableResults(table, desiredResults) {
+  const desiredById = new Map(desiredResults.map(result => [result._id, result]));
+  const existingById = new Map(table.results.map(result => [result.id, result]));
+
+  const creates = [];
+  const updates = [];
+  const deletes = [];
+  let unchanged = 0;
+
+  for (const desired of desiredResults) {
+    const existing = existingById.get(desired._id);
+    if (!existing) {
+      creates.push(desired);
+      continue;
+    }
+
+    if (sameGatheringResult(existing, desired)) {
+      unchanged++;
+      continue;
+    }
+
+    const update = foundry.utils.deepClone(desired);
+    update._id = existing.id;
+    // Draw state is transient table state and is deliberately not managed.
+    delete update.drawn;
+    updates.push(update);
+  }
+
+  for (const existing of table.results) {
+    if (!desiredById.has(existing.id)) deletes.push(existing.id);
+  }
+
+  if (deletes.length) await table.deleteEmbeddedDocuments("TableResult", deletes);
+  if (updates.length) await table.updateEmbeddedDocuments("TableResult", updates);
+  if (creates.length) await table.createEmbeddedDocuments("TableResult", creates, { keepId: true });
+
+  return {
+    created: creates.length,
+    updated: updates.length,
+    deleted: deletes.length,
+    unchanged
+  };
+}
+
+async function syncGatheringTables() {
+  const itemPack = await ensureItemPack();
+  const tablePack = await ensureGatheringPack();
+
+  const zones = [];
+  for (const sourceFile of GATHERING_ZONE_SOURCES) {
+    zones.push({ sourceFile, zone: await loadJson(sourceFile) });
+  }
+
+  const itemDocs = await itemPack.getDocuments();
+  const itemsById = new Map(itemDocs.map(item => [item.id, item]));
+
+  return withUnlockedPack(tablePack, async () => {
+    const folderTotals = { created: 0, updated: 0, unchanged: 0 };
+    let created = 0;
+    let updated = 0;
+    let unchanged = 0;
+    let deleted = 0;
+    let unresolved = 0;
+    const unresolvedItems = [];
+    const resultTotals = { created: 0, updated: 0, deleted: 0, unchanged: 0 };
+
+    const desiredTableIds = new Set();
+
+    for (const { sourceFile, zone } of zones) {
+      const folders = await syncGatheringZoneFolders(tablePack, zone, sourceFile);
+      folderTotals.created += folders.created;
+      folderTotals.updated += folders.updated;
+      folderTotals.unchanged += folders.unchanged;
+
+      for (const [focus, pools] of Object.entries(zone.botanicalFungalFocuses ?? {})) {
+        const folderId = folders.focusFolders.get(focus)?.id;
+        if (!folderId) throw new Error(`Could not resolve gathering folder for ${zone.name}: ${focus}.`);
+
+        for (const tier of ["Common", "Uncommon", "Rare"]) {
+          const entries = pools[tier] ?? [];
+          const tableId = gatheringTableId(zone, focus, tier);
+          const existing = await tablePack.getDocument(tableId);
+
+          if (!entries.length) {
+            if (existing?.flags?.[MODULE_ID]?.kind === "gathering-table") {
+              await existing.delete();
+              deleted++;
+            }
+            continue;
+          }
+
+          desiredTableIds.add(tableId);
+
+          const resolved = [];
+          for (const entry of entries) {
+            const item = itemsById.get(entry.id);
+            if (!item) {
+              unresolved++;
+              unresolvedItems.push({
+                zone: zone.name,
+                focus,
+                tier,
+                name: entry.name,
+                targetItemId: entry.id,
+                sourceProvider: entry.source
+              });
+              continue;
+            }
+
+            if (item.name !== entry.name) {
+              console.warn(
+                `[${MODULE_ID}] Gathering entry name differs from current Item name for ${entry.id}: ` +
+                `source says "${entry.name}", compendium says "${item.name}". Current Item name will be used.`
+              );
+            }
+
+            resolved.push({ entry, item });
+          }
+
+          if (!resolved.length) {
+            if (existing?.flags?.[MODULE_ID]?.kind === "gathering-table") {
+              await existing.delete();
+              deleted++;
+            }
+            continue;
+          }
+
+          const flags = gatheringTableFlags(zone, focus, tier, sourceFile);
+          const desiredRoot = {
+            name: `Z${zone.zoneNumber} — ${focus} — ${tier}`,
+            description:
+              `<p><strong>${zone.name}</strong> — ${focus} — ${tier} botanical/fungal gathering pool.</p>` +
+              `<p>Generated by Kor Sirok Alchemy. Each result yields one source-material unit per pull; ` +
+              `degree-of-success logic is handled separately.</p>`,
+            formula: `1d${resolved.length}`,
+            img: "icons/svg/d20-grey.svg",
+            replacement: true,
+            displayRoll: true,
+            folder: folderId,
+            flags: { [MODULE_ID]: flags }
+          };
+
+          const desiredResults = resolved.map(({ entry, item }, index) =>
+            tableResultDefinition(tableId, entry, item, index)
+          );
+
+          if (!existing) {
+            await RollTable.implementation.create(
+              {
+                _id: tableId,
+                ...desiredRoot,
+                results: desiredResults
+              },
+              { pack: tablePack.collection, keepId: true }
+            );
+            created++;
+            resultTotals.created += desiredResults.length;
+            continue;
+          }
+
+          if (existing.flags?.[MODULE_ID]?.kind !== "gathering-table") {
+            throw new Error(
+              `Gathering table ID collision: ${tableId} is already occupied by unmanaged table "${existing.name}".`
+            );
+          }
+
+          const rootChanges = {};
+          if (existing.name !== desiredRoot.name) rootChanges.name = desiredRoot.name;
+          if ((existing.description ?? "") !== desiredRoot.description) rootChanges.description = desiredRoot.description;
+          if (existing.formula !== desiredRoot.formula) rootChanges.formula = desiredRoot.formula;
+          if (existing.img !== desiredRoot.img) rootChanges.img = desiredRoot.img;
+          if (existing.replacement !== desiredRoot.replacement) rootChanges.replacement = desiredRoot.replacement;
+          if (existing.displayRoll !== desiredRoot.displayRoll) rootChanges.displayRoll = desiredRoot.displayRoll;
+          if (currentFolderId(existing) !== folderId) rootChanges.folder = folderId;
+          if (!sameJson(existing.flags?.[MODULE_ID], flags)) {
+            rootChanges[`flags.${MODULE_ID}`] = flags;
+          }
+
+          const resultChanges = await syncGatheringTableResults(existing, desiredResults);
+          resultTotals.created += resultChanges.created;
+          resultTotals.updated += resultChanges.updated;
+          resultTotals.deleted += resultChanges.deleted;
+          resultTotals.unchanged += resultChanges.unchanged;
+
+          if (Object.keys(rootChanges).length) await existing.update(rootChanges);
+
+          if (
+            Object.keys(rootChanges).length ||
+            resultChanges.created || resultChanges.updated || resultChanges.deleted
+          ) {
+            updated++;
+          } else {
+            unchanged++;
+          }
+        }
+      }
+    }
+
+    // Remove obsolete managed tables from source files that remain part of this module.
+    for (const table of await tablePack.getDocuments()) {
+      const flags = table.flags?.[MODULE_ID];
+      if (flags?.kind !== "gathering-table") continue;
+      if (!GATHERING_ZONE_SOURCES.includes(flags.source)) continue;
+      if (desiredTableIds.has(table.id)) continue;
+      await table.delete();
+      deleted++;
+    }
+
+    if (unresolvedItems.length) {
+      console.warn(
+        `[${MODULE_ID}] Some gathering-table source Items could not be resolved. ` +
+        `Those entries were omitted from the generated tables.`,
+        unresolvedItems
+      );
+    }
+
+    console.log(`[${MODULE_ID}] Gathering-table synchronization complete.`, {
+      created,
+      updated,
+      unchanged,
+      deleted,
+      unresolved,
+      folders: folderTotals,
+      results: resultTotals,
+      pack: tablePack.collection
+    });
+
+    return {
+      created,
+      updated,
+      unchanged,
+      deleted,
+      unresolved,
+      unresolvedItems,
+      folders: folderTotals,
+      results: resultTotals
+    };
+  });
+}
+
 function formatMinutes(minutes) {
   if (minutes % 1440 === 0) {
     const days = minutes / 1440;
@@ -1134,6 +1570,7 @@ async function syncAll({ notify = true } = {}) {
     const items = await syncItems({ pack, folderMap: folders.byKey });
     const herbarium = await syncHerbariumSources({ pack, folderMap: folders.byKey });
     const kctg = await syncKctgSources({ pack, folderMap: folders.byKey });
+    const gathering = await syncGatheringTables();
     const recipes = await syncRecipeBook();
 
     if (notify) {
@@ -1155,15 +1592,21 @@ async function syncAll({ notify = true } = {}) {
         (kctg.missing ? `, ${kctg.missing} source missing` : "") +
         (kctg.replacedForTypeChange ? `, ${kctg.replacedForTypeChange} type-replaced` : "");
 
+      const gatheringText =
+        `${gathering.created} gathering tables created, ` +
+        `${gathering.updated} updated, ${gathering.unchanged} unchanged` +
+        (gathering.deleted ? `, ${gathering.deleted} deleted` : "") +
+        (gathering.unresolved ? `, ${gathering.unresolved} unresolved results` : "");
+
       ui.notifications.info(
         `Kor Sirok Alchemy synced: ` +
         `${folders.created} folders created, ${folders.updated} updated; ` +
         `${items.created} native items created, ${items.updated} updated, ${items.unchanged} unchanged; ` +
-        `${herbariumText}; ${kctgText}; ${recipeText}.`
+        `${herbariumText}; ${kctgText}; ${gatheringText}; ${recipeText}.`
       );
     }
 
-    return { folders, items, herbarium, kctg, recipes };
+    return { folders, items, herbarium, kctg, gathering, recipes };
   } catch (error) {
     console.error(`[${MODULE_ID}] Synchronization failed.`, error);
     if (notify) ui.notifications.error(`Kor Sirok Alchemy sync failed: ${error.message}`);
@@ -1180,6 +1623,7 @@ Hooks.once("ready", async () => {
       syncItems,
       syncHerbariumSources,
       syncKctgSources,
+      syncGatheringTables,
       syncRecipeBook
     };
   }

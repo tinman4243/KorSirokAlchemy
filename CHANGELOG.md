@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.5.0
+- Added the managed world RollTable compendium `world.kor-sirok-gathering` (`Kor Sirok — Gathering Tables`).
+- Added Zone 1, **Hercynian Coastal Foreland**, as the first canonical regional gathering definition.
+- Added seven Zone 1 botanical/fungal gathering focuses: Open Woodland & Grassland, Riverbank & Floodplain, Wet Woodland, Freshwater Wetland, Dry Ridge & Rocky Slope, Coast & Littoral, and Estuary & Salt Marsh.
+- Generate 19 non-empty Common/Uncommon/Rare RollTables from the Zone 1 regional-filter data.
+- Generated results point only at stable Items in `world.kor-sirok-alchemy`, use equal weight within tier, roll with replacement, and carry Gatherer quantity `1`.
+- Empty rarity tiers are not materialized as invalid/empty RollTables.
+- Added managed gathering-table folder hierarchy and safe synchronization of table roots/results.
+- Added `syncGatheringTables()` to the module API and automatic ready-time synchronization.
+- Added Gatherer as a recommended module relationship.
+
 ## 0.4.0
 - Made Kris's Compendium of Trade Goods (`kctg-5e`) a required module relationship.
 - Added `data/sources/kctg.json` with 159 approved non-duplicate source materials and Kor Sirok gathering classifications.
