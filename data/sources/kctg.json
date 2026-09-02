@@ -1,0 +1,2497 @@
+{
+  "schema": 1,
+  "revision": 1,
+  "sourcePack": "kctg-5e.kctg-dnd5e",
+  "policy": "refresh-from-source",
+  "notes": "KCTG is a required runtime source. Kor Sirok copies these Items into stable world-compendium IDs and refreshes them when the installed KCTG source Item changes. Missing upstream sources never cause an existing Kor Sirok copy to be deleted.",
+  "items": [
+    {
+      "sourceId": "0AfmU8oEWsoVhuKE",
+      "sourceName": "Pink Waxcaps",
+      "targetId": "bMGMSzVQRAoLh7Z1",
+      "targetName": "Pink Waxcaps",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Open Woodland & Grassland",
+        "secondaryFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "0LqmInQgbQAmDR6D",
+      "sourceName": "Neon-Ront",
+      "targetId": "bcit91iVe28TDg6x",
+      "targetName": "Neon-Ront",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Cloud Forest",
+          "Cave & Subterranean"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "0ptxyVFAlch1nhlF",
+      "sourceName": "Blue Meanies",
+      "targetId": "by8r02My0kA72Ze5",
+      "targetName": "Blue Meanies",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland",
+          "Tropical Lowland Forest"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "1GCxD6z0kCnKBoYP",
+      "sourceName": "Swine Snoot",
+      "targetId": "bOdGpKL3FkFp9U0M",
+      "targetName": "Swine Snoot",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "1GTWiCcX1s2AtuZs",
+      "sourceName": "Last Hope Fire",
+      "targetId": "Oqs5GAel9ZLeTYx2",
+      "targetName": "Last Hope Fire",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Cloud Forest"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "1OzuIZsl7Vejk9y0",
+      "sourceName": "Maidenhair",
+      "targetId": "sGIDmvHOnJTiTdFD",
+      "targetName": "Maidenhair",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Riverbank & Floodplain",
+        "secondaryFocuses": [
+          "Wet Woodland",
+          "Wet Foothill Forest"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "1uJldYNlghSWM8NY",
+      "sourceName": "Spiky Bloom",
+      "targetId": "mH2fhAuGdSEzXd3q",
+      "targetName": "Spiky Bloom",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "2IuluTFdXR0BTCSI",
+      "sourceName": "Ocean River Strings",
+      "targetId": "K8OL47iykOGrrgS0",
+      "targetName": "Ocean River Strings",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Riverbank & Floodplain",
+        "secondaryFocuses": [
+          "Estuary & Salt Marsh"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "2VDV4IhAMVycKwoh",
+      "sourceName": "Red Coral",
+      "targetId": "0uVAjcFoA1qViFW0",
+      "targetName": "Red Coral",
+      "targetFolder": "wild-animal-products",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Coast & Littoral",
+        "secondaryFocuses": [],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "2u7dgqohFGDXuQ8c",
+      "sourceName": "Peach Pits",
+      "targetId": "QA1aBakyjUFHd5Oc",
+      "targetName": "Peach Pits",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "3MEoX0O3kUWn2tjL",
+      "sourceName": "Matsutake",
+      "targetId": "u59YCs3OxMMPLsW4",
+      "targetName": "Matsutake",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Foothill Forest",
+        "secondaryFocuses": [
+          "Wet Woodland",
+          "Alpine & High Mountain"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "3t85waQABFkGkfuM",
+      "sourceName": "Soot",
+      "targetId": "IR2MCcx5LEz0Uqg9",
+      "targetName": "Soot",
+      "targetFolder": "processed-derived",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "No",
+        "primaryFocus": "Not Gathered",
+        "secondaryFocuses": [],
+        "tier": "Not Gathered"
+      }
+    },
+    {
+      "sourceId": "4eaNrSxaDRkBD9QP",
+      "sourceName": "Puffball",
+      "targetId": "jLlqWSYkxSpyv6At",
+      "targetName": "Puffball",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Open Woodland & Grassland",
+        "secondaryFocuses": [
+          "Farmland & Disturbed Ground",
+          "Wet Woodland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "4qP13s92Lm5u8LOs",
+      "sourceName": "Bitterroot",
+      "targetId": "Po9TbBZY8zJaUD1v",
+      "targetName": "Bitterroot",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "secondaryFocuses": [
+          "Alpine & High Mountain",
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "5ZzRWyo9osxFt9p7",
+      "sourceName": "Toadstool",
+      "targetId": "gZp2SeEjA2i4L17U",
+      "targetName": "Toadstool",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "6Fv3ZXp5zk9PIVER",
+      "sourceName": "Seeds - Sunflower",
+      "targetId": "bbMH6QdkDAcqHwFv",
+      "targetName": "Seeds - Sunflower",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "6TogGXlqNodutv2Z",
+      "sourceName": "The Sickener",
+      "targetId": "nsKiHgiUDRpXYO31",
+      "targetName": "The Sickener",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "7v42Um4jw94k69et",
+      "sourceName": "Gauze",
+      "targetId": "bMGN0PM7KyzrSEW7",
+      "targetName": "Gauze",
+      "targetFolder": "processed-derived",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "No",
+        "primaryFocus": "Not Gathered",
+        "secondaryFocuses": [],
+        "tier": "Not Gathered"
+      }
+    },
+    {
+      "sourceId": "849vXyS5OvwH0fhM",
+      "sourceName": "Plum Seeds",
+      "targetId": "V3RVcpEi7c2GVQ3I",
+      "targetName": "Plum Seeds",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "8DemCR4jma9bMP51",
+      "sourceName": "Onion Sprout",
+      "targetId": "bslw7cYACF5BwC4m",
+      "targetName": "Onion Sprout",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "Axk60EJHp4lcvk96",
+      "sourceName": "Violet Webcap",
+      "targetId": "HGQirgFair9k6OAH",
+      "targetName": "Violet Webcap",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Wet Foothill Forest"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "BD4FE2rzRvtC5vN6",
+      "sourceName": "Chamomile",
+      "targetId": "Zs5FwcYIM2JiZDpR",
+      "targetName": "Chamomile",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Open Woodland & Grassland",
+        "secondaryFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "BTE3lF8WhSV3lXwy",
+      "sourceName": "Seeds - Corn",
+      "targetId": "bqabkkaYlEYP7cHb",
+      "targetName": "Seeds - Corn",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "CGWaP1K9rVOVFZEv",
+      "sourceName": "The Last Veiled Widow",
+      "targetId": "bIJKhi74oG48sYf2",
+      "targetName": "The Last Veiled Widow",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Cave & Subterranean",
+          "Cloud Forest"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "CJf3TdO4GeDFKC47",
+      "sourceName": "Ramie",
+      "targetId": "3kQCX4rex71QCB4F",
+      "targetName": "Ramie",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Riverbank & Floodplain",
+          "Wet Foothill Forest"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "D1FhtUKpR956xTpd",
+      "sourceName": "Dandelion",
+      "targetId": "bupotZFG8mWmkLjG",
+      "targetName": "Dandelion",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "Dc1B1iG8WLtmUmNB",
+      "sourceName": "King Bolete",
+      "targetId": "bJZnsgsWnRKX9xdf",
+      "targetName": "King Bolete",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Wet Foothill Forest"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "ECZAPt7OPWr5LpJc",
+      "sourceName": "Golden Berry",
+      "targetId": "vZkLd4dN9OcGIBK8",
+      "targetName": "Golden Berry",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Tropical Lowland Forest"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "EK6aK5L9yGf1PCDL",
+      "sourceName": "Nettle",
+      "targetId": "oXyRK8ZkoupCC7X5",
+      "targetName": "Nettle",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Riverbank & Floodplain",
+        "secondaryFocuses": [
+          "Farmland & Disturbed Ground",
+          "Wet Woodland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "ELdNhxd5zz5RwSvz",
+      "sourceName": "Lobster",
+      "targetId": "tApkXyo59l1Jq4Qb",
+      "targetName": "Lobster Mushroom",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Wet Foothill Forest"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "FmSvpwEK03Gn0Pik",
+      "sourceName": "Gooseberries",
+      "targetId": "8rWKESIBxaIYemZz",
+      "targetName": "Gooseberries",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "GO3d6cXZm8XXDZcR",
+      "sourceName": "Blewits",
+      "targetId": "bILC2H1Q7Jw4qNTl",
+      "targetName": "Blewits",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Open Woodland & Grassland",
+        "secondaryFocuses": [
+          "Wet Woodland",
+          "Farmland & Disturbed Ground"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "Ge6twAxZaLOIagvS",
+      "sourceName": "Verdigris Waxcap",
+      "targetId": "iJeJi98iaj3Ed1p3",
+      "targetName": "Verdigris Waxcap",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "GujEmn6ohugmiyel",
+      "sourceName": "Indigo Milkcap",
+      "targetId": "ZJdjE8UhybrCNUxs",
+      "targetName": "Indigo Milkcap",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Wet Foothill Forest"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "H6Wnrd1IlWS47HR1",
+      "sourceName": "Old Man Of The Woods",
+      "targetId": "fDtLsZN0Zib2PYKW",
+      "targetName": "Old Man Of The Woods",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Wet Foothill Forest"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "HzcLpKfgE1pt3IwD",
+      "sourceName": "Brute's Mace",
+      "targetId": "lMT6mR287BzrF3tA",
+      "targetName": "Brute's Mace",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "Ib9YpfbSiosuU2FK",
+      "sourceName": "Blue Chanterelle",
+      "targetId": "bA9XK6pclA0VOIr9",
+      "targetName": "Blue Chanterelle",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Foothill Forest",
+        "secondaryFocuses": [
+          "Wet Woodland",
+          "Cloud Forest"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "IcikxwfxMLSWuMxv",
+      "sourceName": "Carnation",
+      "targetId": "46F2yGMhByb3bMgY",
+      "targetName": "Carnation",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "Ii4hHDSEivyuKMpO",
+      "sourceName": "Maple Seeds",
+      "targetId": "4J9aDRqfevRXh5sy",
+      "targetName": "Maple Seeds",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Open Woodland & Grassland",
+        "secondaryFocuses": [
+          "Wet Woodland",
+          "Farmland & Disturbed Ground"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "MNpkI9wUQPwn5HO2",
+      "sourceName": "Olive Pomace",
+      "targetId": "bju37g07SLKXpX72",
+      "targetName": "Olive Pomace",
+      "targetFolder": "processed-derived",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "No",
+        "primaryFocus": "Not Gathered",
+        "secondaryFocuses": [],
+        "tier": "Not Gathered"
+      }
+    },
+    {
+      "sourceId": "MQGXVLlxM3eYucq9",
+      "sourceName": "Wild Mint",
+      "targetId": "tMHCMfbZJnHwbPKa",
+      "targetName": "Wild Mint",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Riverbank & Floodplain",
+        "secondaryFocuses": [
+          "Freshwater Wetland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "P2YCQm8BCuDcZLU0",
+      "sourceName": "Seeds - Wheat",
+      "targetId": "v5SautH2xMV27Kkd",
+      "targetName": "Seeds - Wheat",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "PBpiiXKw3sbIlnxL",
+      "sourceName": "Horsetail",
+      "targetId": "bE66XVUn30PHqah9",
+      "targetName": "Horsetail",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Riverbank & Floodplain",
+        "secondaryFocuses": [
+          "Freshwater Wetland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "R9MZA98E0iyZKKB2",
+      "sourceName": "Breadseed Poppy",
+      "targetId": "x6CjAPER7cAiafGS",
+      "targetName": "Breadseed Poppy",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "RLh3cscgMOkbbZKN",
+      "sourceName": "Yellow Stainer",
+      "targetId": "bh1wwHAXQgerWiGq",
+      "targetName": "Yellow Stainer",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Open Woodland & Grassland",
+        "secondaryFocuses": [
+          "Farmland & Disturbed Ground",
+          "Wet Woodland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "UYd5dWhCslz48WLa",
+      "sourceName": "Nerium",
+      "targetId": "bttr4yCyBlWpTNYp",
+      "targetName": "Nerium",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Riverbank & Floodplain",
+        "secondaryFocuses": [
+          "Dry Ridge & Rocky Slope"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "UeBe1fUvXm8Ru06C",
+      "sourceName": "Seeds - Hyacinth",
+      "targetId": "bzdN0Eokp1aJwYOE",
+      "targetName": "Seeds - Hyacinth",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "UfxQ424cb9YVZnjU",
+      "sourceName": "Myrica Gale",
+      "targetId": "s9dOZOHtMagfSaoK",
+      "targetName": "Myrica Gale",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Freshwater Wetland",
+        "secondaryFocuses": [
+          "Riverbank & Floodplain"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "WQfjrWzKtB8hNwHC",
+      "sourceName": "Field Mushroom",
+      "targetId": "ZpwViMIqFv2jN7JN",
+      "targetName": "Field Mushroom",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Open Woodland & Grassland",
+        "secondaryFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "X0hYlerKcnyYyzxf",
+      "sourceName": "Clover",
+      "targetId": "bxim0GYL9Fx9vAzL",
+      "targetName": "Clover",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Open Woodland & Grassland",
+        "secondaryFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "XwG0vTrXkUhurxoy",
+      "sourceName": "Spicebush",
+      "targetId": "6s6JJIbzUCRNyJ7v",
+      "targetName": "Spicebush",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Riverbank & Floodplain"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "Y2D5RFPn0o0nCTME",
+      "sourceName": "Amanita Caesareae",
+      "targetId": "rggXVcRebIH8KRtz",
+      "targetName": "Amanita Caesareae",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Open Woodland & Grassland",
+        "secondaryFocuses": [
+          "Wet Woodland"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "YKXVtmAmKCb2VFnn",
+      "sourceName": "Hyacinth",
+      "targetId": "jtmOVjGc3Jxha0aj",
+      "targetName": "Hyacinth",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "YcAjajPo3NZqZAZG",
+      "sourceName": "God's Wrath",
+      "targetId": "y6pJtwUXwp0idJjm",
+      "targetName": "Sulfur",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Volcanic & Geothermal",
+        "secondaryFocuses": [
+          "Ore Vein & Mine"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "ZRz5CYUYS4BatZc9",
+      "sourceName": "Myrrh",
+      "targetId": "blneYrho0oFdm4N8",
+      "targetName": "Myrrh",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Arid Scrub & Desert",
+        "secondaryFocuses": [
+          "Dry Ridge & Rocky Slope"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "addcPJ38CpPsAVkc",
+      "sourceName": "Elfin Saddle",
+      "targetId": "8ehfsuZ1GiiXWUCq",
+      "targetName": "Elfin Saddle",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Wet Foothill Forest"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "cLPx2JYMkjEe3GId",
+      "sourceName": "Questionable Stropharia",
+      "targetId": "crBuk25g1rrHMpKZ",
+      "targetName": "Questionable Stropharia",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "eZRJZAX5DAAILUJi",
+      "sourceName": "Primrose Brittlegill",
+      "targetId": "rKyYuRiBFftaxN4J",
+      "targetName": "Primrose Brittlegill",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Foothill Forest",
+        "secondaryFocuses": [
+          "Wet Woodland"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "ecBzMRaZSK8ctI0D",
+      "sourceName": "Bone Meal",
+      "targetId": "UCwMJFolJ704beh6",
+      "targetName": "Bone Meal",
+      "targetFolder": "processed-derived",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "No",
+        "primaryFocus": "Not Gathered",
+        "secondaryFocuses": [],
+        "tier": "Not Gathered"
+      }
+    },
+    {
+      "sourceId": "fXHckhHro0xhXJVl",
+      "sourceName": "Seed Potato",
+      "targetId": "f3FkdWew5cpQC3dU",
+      "targetName": "Seed Potato",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "feo29S44vMp6aAjt",
+      "sourceName": "Oyster",
+      "targetId": "z5u0IJZJ6eaGlxRz",
+      "targetName": "Oyster",
+      "targetFolder": "wild-animal-products",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Coast & Littoral",
+        "secondaryFocuses": [
+          "Estuary & Salt Marsh"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "fheYwzExAA8TagxU",
+      "sourceName": "Wood Lily",
+      "targetId": "bhw2RqAkCK3bQsLr",
+      "targetName": "Wood Lily",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Open Woodland & Grassland",
+        "secondaryFocuses": [
+          "Wet Woodland",
+          "Alpine & High Mountain"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "frBDmMZPBFcGp0mz",
+      "sourceName": "Arcana Magma",
+      "targetId": "FJmeehymih8s5nEh",
+      "targetName": "Arcana Magma",
+      "targetFolder": "special-esoteric",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Special",
+        "primaryFocus": "Creature Harvest",
+        "secondaryFocuses": [],
+        "tier": "Special"
+      }
+    },
+    {
+      "sourceId": "gg2V7ciyfjGk9wF3",
+      "sourceName": "Water Lily",
+      "targetId": "zL97XNdHbovnmUed",
+      "targetName": "Water Lily",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Freshwater Wetland",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "h696quOjAtz7hySa",
+      "sourceName": "Kurnarac",
+      "targetId": "AbJ2pNKNFmRlIqLr",
+      "targetName": "Kurnarac",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Cave & Subterranean",
+        "secondaryFocuses": [],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "hJz0zvTzrKNcN2pu",
+      "sourceName": "Dead Heart Apple",
+      "targetId": "bO0VzGttFssM8ERm",
+      "targetName": "Dead Heart Apple",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Needs World Placement",
+        "secondaryFocuses": [],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "hWFSTyIkdM2nB1Je",
+      "sourceName": "Funeral Bell",
+      "targetId": "dGz7y440o6mzEfvS",
+      "targetName": "Funeral Bell",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Wet Foothill Forest"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "hlQubxNtwNaNRftt",
+      "sourceName": "Pennyroyal",
+      "targetId": "migpGpay91FOAtIX",
+      "targetName": "Pennyroyal",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Riverbank & Floodplain",
+        "secondaryFocuses": [
+          "Freshwater Wetland"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "hnEuCSi3eCYRIVIL",
+      "sourceName": "Coneflower",
+      "targetId": "h5syowl6KOhYAm6T",
+      "targetName": "Coneflower",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "hzaSGY69bf1VFYmQ",
+      "sourceName": "Adder Venom",
+      "targetId": "bheIws5xYxUGEbBz",
+      "targetName": "Adder Venom",
+      "targetFolder": "wild-animal-products",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Open Woodland & Grassland",
+        "secondaryFocuses": [
+          "Dry Ridge & Rocky Slope",
+          "Wet Woodland"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "i9mWFelkrEDvOM25",
+      "sourceName": "Death Cap",
+      "targetId": "bhWT9nd20aCcEpad",
+      "targetName": "Death Cap",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "jDb5UIQt5bWhOoq5",
+      "sourceName": "Forest Lantern",
+      "targetId": "bGJbNdqiymUlIsjf",
+      "targetName": "Forest Lantern",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Needs World Placement",
+        "secondaryFocuses": [],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "jRY3hJOFvB4jw5PC",
+      "sourceName": "Stargazer Lily",
+      "targetId": "bkC7am39eobkGmss",
+      "targetName": "Stargazer Lily",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "jWkyhDx4ZnBt74rZ",
+      "sourceName": "Silphium",
+      "targetId": "GK6fTdNz3mA9h3Cy",
+      "targetName": "Silphium",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "secondaryFocuses": [
+          "Coast & Littoral",
+          "Arid Scrub & Desert"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "jwKhzylOJ981g9kg",
+      "sourceName": "Clustered Domecap",
+      "targetId": "bnCmoRzpLO6pSmMO",
+      "targetName": "Clustered Domecap",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "kSwNUdtbrm8YpnfA",
+      "sourceName": "The Flirt",
+      "targetId": "bJ8Z3YwexT6xJlnZ",
+      "targetName": "The Flirt",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "lda7NBbIC3oSMECw",
+      "sourceName": "Natron",
+      "targetId": "T95n57h5k0k1HiJi",
+      "targetName": "Natron",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Dry Lake & Salt Flat",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "m3ls9pJAaNF68eKv",
+      "sourceName": "Marjoram",
+      "targetId": "q1xVh5UTcfUG0RoD",
+      "targetName": "Marjoram",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Dry Ridge & Rocky Slope"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "nLDIB6GKTdhKIRxA",
+      "sourceName": "Roseoflava",
+      "targetId": "btAC0y64adxZhshu",
+      "targetName": "Roseoflava",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Cloud Forest",
+          "Wet Foothill Forest"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "ncUxujkvCIBeZ5TA",
+      "sourceName": "Tulip",
+      "targetId": "bhV8ZeD4ZCIwNMbI",
+      "targetName": "Tulip",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Dry Ridge & Rocky Slope"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "nw7y7Hp7wjVm9ThC",
+      "sourceName": "Purple Brittlegill",
+      "targetId": "qnOJEmXmMIsAPFdT",
+      "targetName": "Purple Brittlegill",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "o3JZMhyp3m3eg8RC",
+      "sourceName": "Divine Light",
+      "targetId": "bcfPH9i2ydakYPGz",
+      "targetName": "Divine Light",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Open Woodland & Grassland",
+        "secondaryFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "oaVo8AKo5z9cs6Hf",
+      "sourceName": "Purple Emperor",
+      "targetId": "ARwDPnqRInpBdJ2f",
+      "targetName": "Purple Emperor Mushroom",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Cloud Forest"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "p6sAQFucC40km1bu",
+      "sourceName": "Seeds - Pumpkin",
+      "targetId": "bvWGa23bN0gCdzyY",
+      "targetName": "Seeds - Pumpkin",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "pemkv7d8Nmz0KGEk",
+      "sourceName": "Sky Blue",
+      "targetId": "B3f1YJHSny2ANygJ",
+      "targetName": "Sky Blue",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Wet Foothill Forest",
+          "Cloud Forest"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "qf9X03f9v2AT8Bxc",
+      "sourceName": "Desert Shaggy Mane",
+      "targetId": "3dRH6DmPzHmMLinD",
+      "targetName": "Desert Shaggy Mane",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Arid Scrub & Desert",
+        "secondaryFocuses": [
+          "Dry Ridge & Rocky Slope"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "qsZGvHPKiZd27Ugj",
+      "sourceName": "Purple Berries",
+      "targetId": "n9tHMLP4jdiBKGmQ",
+      "targetName": "Purple Berries",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Open Woodland & Grassland",
+        "secondaryFocuses": [
+          "Wet Woodland"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "rQL9PBx3vPR7lPkN",
+      "sourceName": "Cranesbill",
+      "targetId": "RsrmKMOpPQMiyrtU",
+      "targetName": "Cranesbill",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "rt3SdfuT5sLTRaOH",
+      "sourceName": "Butterfly Fruit",
+      "targetId": "bL1FotioXFPRZfdj",
+      "targetName": "Butterfly Fruit",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Needs World Placement",
+        "secondaryFocuses": [],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "ru2IqhN9aMtXHYsl",
+      "sourceName": "Green Elf Cup",
+      "targetId": "I27SwGSRDUYzS6jm",
+      "targetName": "Green Elf Cup",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Wet Foothill Forest"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "sbXRgcTUfp16lmpW",
+      "sourceName": "Jack'o'lantern Mushroom",
+      "targetId": "kplUnKzTG4QGm9ep",
+      "targetName": "Jack'o'lantern Mushroom",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "scIuqsffBg1HPCOD",
+      "sourceName": "Sunberries",
+      "targetId": "bg0FxWtnaNZ5bDXM",
+      "targetName": "Sunberries",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "tFolBFzmykCvOSnw",
+      "sourceName": "Daer-Kron",
+      "targetId": "bA2woIKV1cRUw8AY",
+      "targetName": "Daer-Kron",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Special",
+        "primaryFocus": "Cave & Subterranean",
+        "secondaryFocuses": [],
+        "tier": "Special"
+      }
+    },
+    {
+      "sourceId": "tPvNlFWnvnjPZGBs",
+      "sourceName": "Figworts",
+      "targetId": "bqtFvyIR4g7GXLIp",
+      "targetName": "Figworts",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Riverbank & Floodplain"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "u6ewVK7LYeAh3Tet",
+      "sourceName": "Slippery Jack",
+      "targetId": "OJtwXQxEk3oZe8Ml",
+      "targetName": "Slippery Jack",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Foothill Forest",
+        "secondaryFocuses": [
+          "Wet Woodland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "uic42QtAp94MnsvQ",
+      "sourceName": "Spring Water",
+      "targetId": "U4NviECMkVw4cYLj",
+      "targetName": "Spring Water",
+      "targetFolder": "natural-waters",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Spring & Headwater",
+        "secondaryFocuses": [
+          "Riverbank & Floodplain",
+          "Cave & Subterranean"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "v6OzTRxnDynAeGrj",
+      "sourceName": "Popcorn Kernels",
+      "targetId": "RpFxNbH9H2GfB5iM",
+      "targetName": "Popcorn Kernels",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "vEji6n906Lkn1oZA",
+      "sourceName": "Maple Sap",
+      "targetId": "TwxUH8WvuVUvHpP8",
+      "targetName": "Maple Sap",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "vLtu6Av1fydc1rFE",
+      "sourceName": "Star Anise",
+      "targetId": "x8x1VB6RJ3CyrkI6",
+      "targetName": "Star Anise",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Tropical Lowland Forest"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "vTVyqpdvr8kROntW",
+      "sourceName": "Garlic Scapes",
+      "targetId": "bGmpu5KqfF91slen",
+      "targetName": "Garlic Scapes",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "wYF1AfohBA2IpIOk",
+      "sourceName": "Green-Spored Parasol",
+      "targetId": "bIeY6d2mp2Qm2H6q",
+      "targetName": "Green-Spored Parasol",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Open Woodland & Grassland",
+        "secondaryFocuses": [
+          "Farmland & Disturbed Ground"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "xNJYf0IDZND384gi",
+      "sourceName": "Laurel",
+      "targetId": "bOn9J63ngzPqFYq9",
+      "targetName": "Laurel",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "xcrby593NKEGUW9e",
+      "sourceName": "Bearberry",
+      "targetId": "qxLYYiSYwonFKt5m",
+      "targetName": "Bearberry",
+      "targetFolder": "wild-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Dry Ridge & Rocky Slope",
+        "secondaryFocuses": [
+          "Alpine & High Mountain",
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "xxOUURqmpMgMNaZz",
+      "sourceName": "Amaranth",
+      "targetId": "bC8sOVf8bIl6oJK3",
+      "targetName": "Amaranth",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Open Woodland & Grassland"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "yS0lgYRJQHC9RWDk",
+      "sourceName": "Gold-Drop Milkcap",
+      "targetId": "R2GssMwS44swRWMr",
+      "targetName": "Gold-Drop Milkcap",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Wet Foothill Forest"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "yWAbix37RhVrqVzq",
+      "sourceName": "Witchhat Mushroom",
+      "targetId": "fWISglZGRzfXmt9j",
+      "targetName": "Witchhat Mushroom",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Cloud Forest",
+          "Cave & Subterranean"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "yaVb5vv9FqOoGRF1",
+      "sourceName": "Pixie’s Parasol",
+      "targetId": "bpp2811NEKAoCAtB",
+      "targetName": "Pixie’s Parasol",
+      "targetFolder": "fungi",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Wet Woodland",
+        "secondaryFocuses": [
+          "Cloud Forest"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "ygnFaOm05vGQIITF",
+      "sourceName": "Nutmeg",
+      "targetId": "bsKg5DFDvGl2aro4",
+      "targetName": "Nutmeg",
+      "targetFolder": "agricultural-plants",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Farmland & Disturbed Ground",
+        "secondaryFocuses": [
+          "Tropical Lowland Forest"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "9Dp6dQ0uDPiteX2C",
+      "sourceName": "Rock Salt",
+      "targetId": "dj7wlfsRN7OyiDec",
+      "targetName": "Rock Salt",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Dry Lake & Salt Flat",
+        "secondaryFocuses": [
+          "Sedimentary Basin & Quarry"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "5GOsrqtX95KxOegm",
+      "sourceName": "Kala Namak",
+      "targetId": "bhtd46rEjmaAxPdt",
+      "targetName": "Kala Namak",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Sedimentary Basin & Quarry",
+        "secondaryFocuses": [
+          "Dry Lake & Salt Flat",
+          "Volcanic & Geothermal"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "1TAnpxwgBeXQ2B4O",
+      "sourceName": "Chromite Ore",
+      "targetId": "zLVP69zINPs8BsP8",
+      "targetName": "Chromite Ore",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "Mountain & Exposed Rock"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "60rTwRHgRBC5AuUw",
+      "sourceName": "Zinc",
+      "targetId": "bL0JLzw56Iap4by4",
+      "targetName": "Zinc",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "693AVPlHi7InkjlV",
+      "sourceName": "Palladium",
+      "targetId": "yTPagjpSithkMqdV",
+      "targetName": "Palladium",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "River Gravel & Placer"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "6DokoZGSmyjZRDsX",
+      "sourceName": "Cobalt",
+      "targetId": "bpx8x0LVB9RPu4bB",
+      "targetName": "Cobalt",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "7FhL44inhkgoocgy",
+      "sourceName": "Daliumite",
+      "targetId": "dhgrADSyMpkZeMHz",
+      "targetName": "Daliumite",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "Cave & Subterranean"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "9DRXauWRFlorGwXc",
+      "sourceName": "Selenium",
+      "targetId": "bxOiDXPapYv2jKNZ",
+      "targetName": "Selenium",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "9QnmrkjJhsNVcIK6",
+      "sourceName": "Vanadium",
+      "targetId": "tnLFqsVtJGUU6OwI",
+      "targetName": "Vanadium",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "HJjSm5zSwXfstNEb",
+      "sourceName": "Fool's Gold",
+      "targetId": "bOMj3HNAJYQAlamK",
+      "targetName": "Fool's Gold",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "Mountain & Exposed Rock"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "NjHxIfJizgA3tZ8i",
+      "sourceName": "Antimony",
+      "targetId": "9knETpjnFkUbqkWx",
+      "targetName": "Antimony",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "OPF1HoGQAGepVulX",
+      "sourceName": "Mithral",
+      "targetId": "8Orv1ecdEwVI8OfV",
+      "targetName": "Mithral",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Special",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "Cave & Subterranean"
+        ],
+        "tier": "Special"
+      }
+    },
+    {
+      "sourceId": "Reyx9n8TSpEU0Z6T",
+      "sourceName": "Titanium",
+      "targetId": "n1UlgMEyWNsDcm2c",
+      "targetName": "Titanium",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "River Gravel & Placer",
+          "Mountain & Exposed Rock"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "RxJMdIYyd18ui3Np",
+      "sourceName": "Iron Ore",
+      "targetId": "bucaejNAX6EmOt7m",
+      "targetName": "Iron Ore",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "Mountain & Exposed Rock"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "Sp5wShdwpLjL3b1K",
+      "sourceName": "Silver Ore",
+      "targetId": "KlTg7OWoLLul7wp6",
+      "targetName": "Silver Ore",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "UeB7pF42WH5p2zOL",
+      "sourceName": "Cold Iron",
+      "targetId": "bEIeGJAACi2wY6b8",
+      "targetName": "Cold Iron",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Cave & Subterranean",
+        "secondaryFocuses": [
+          "Ore Vein & Mine"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "WrgerstWm56lPRAx",
+      "sourceName": "Platinum Ore",
+      "targetId": "6Eupt34Wj4myqK40",
+      "targetName": "Platinum Ore",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "River Gravel & Placer"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "b28vVaj280FuDrwP",
+      "sourceName": "Gold Ore",
+      "targetId": "ZUj5q63Z51g3DERN",
+      "targetName": "Gold Ore",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "River Gravel & Placer"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "cs8wt6CRZgkbaVCq",
+      "sourceName": "Tin",
+      "targetId": "kWIrqBBByowHuVSF",
+      "targetName": "Tin",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "River Gravel & Placer"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "hThZP6OZmqhurZQi",
+      "sourceName": "Lead",
+      "targetId": "REcpDHn8wz3Frxlt",
+      "targetName": "Lead",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "lZieNwyR1n7Bpsit",
+      "sourceName": "Coal",
+      "targetId": "beOGjXgpNBGwOWTt",
+      "targetName": "Coal",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Sedimentary Basin & Quarry",
+        "secondaryFocuses": [
+          "Ore Vein & Mine"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "ll93HE0rG7mS29Cn",
+      "sourceName": "Nickel Ore",
+      "targetId": "bAXORoRSAvdSSZwk",
+      "targetName": "Nickel Ore",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "luC1pQogGS5AILYL",
+      "sourceName": "Rhenium",
+      "targetId": "baXxDqMX3xJkiGHH",
+      "targetName": "Rhenium",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "mnK3qRqyfqWDph9Z",
+      "sourceName": "Mercury / Cinnabar",
+      "targetId": "C3CSFOliUGjlkK3Z",
+      "targetName": "Mercury / Cinnabar",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Volcanic & Geothermal",
+        "secondaryFocuses": [
+          "Ore Vein & Mine"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "tpJ4xbJqNrxCW9KQ",
+      "sourceName": "Copper Ore",
+      "targetId": "cmxEiDBdEHeGbeuL",
+      "targetName": "Copper Ore",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "Mountain & Exposed Rock"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "uR1VufD4v4Cu5k9n",
+      "sourceName": "Aurichalcum Ore",
+      "targetId": "bxzPzsRlKMlugwlA",
+      "targetName": "Aurichalcum Ore",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Special",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "Cave & Subterranean"
+        ],
+        "tier": "Special"
+      }
+    },
+    {
+      "sourceId": "vuqOw4GgNT0v8BPq",
+      "sourceName": "Manganese Chips",
+      "targetId": "QU48XSjteqdksUiU",
+      "targetName": "Manganese Chips",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "Mountain & Exposed Rock"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "wu7mjB7xKNMbcocJ",
+      "sourceName": "Electrum",
+      "targetId": "bwcMoZv2wnWG2RLf",
+      "targetName": "Electrum",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "River Gravel & Placer"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "xEXkfs2Gom9NhvFo",
+      "sourceName": "Aluminum Ore",
+      "targetId": "YRFdV2eRHg5qEK5p",
+      "targetName": "Aluminum Ore",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Surface Soil & Weathered Deposit",
+        "secondaryFocuses": [
+          "Sedimentary Basin & Quarry"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "zmlpVpxQH6EAMn3x",
+      "sourceName": "Adamantine",
+      "targetId": "352GWOsbUxAxBwJF",
+      "targetName": "Adamantine",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Special",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "Cave & Subterranean"
+        ],
+        "tier": "Special"
+      }
+    },
+    {
+      "sourceId": "0khzGYMfnIsdVkuF",
+      "sourceName": "Gneiss",
+      "targetId": "0WMFP3vgcqeMMsOu",
+      "targetName": "Gneiss",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Mountain & Exposed Rock",
+        "secondaryFocuses": [
+          "Sedimentary Basin & Quarry"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "27tgQWz6dwEUzb2W",
+      "sourceName": "Quartzite",
+      "targetId": "9zpMPdjZp6zqIXdn",
+      "targetName": "Quartzite",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Mountain & Exposed Rock",
+        "secondaryFocuses": [
+          "Sedimentary Basin & Quarry"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "4qa4xmbanVVc21SP",
+      "sourceName": "Laterite",
+      "targetId": "bsnyBJYXdh8uKEyu",
+      "targetName": "Laterite",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Surface Soil & Weathered Deposit",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "Aqlk1rbQXYBGTbVS",
+      "sourceName": "Alabaster",
+      "targetId": "bJJofXH30xtpt9a4",
+      "targetName": "Alabaster",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Sedimentary Basin & Quarry",
+        "secondaryFocuses": [
+          "Cave & Subterranean"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "EPaD6SKxsEFRFNjv",
+      "sourceName": "Sandstone",
+      "targetId": "bvkYGQzlF38efilr",
+      "targetName": "Sandstone",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Sedimentary Basin & Quarry",
+        "secondaryFocuses": [
+          "Mountain & Exposed Rock"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "EZhOYnD0HlfbZ0e9",
+      "sourceName": "Pietra Serena",
+      "targetId": "bdG8wGsCy7cZHzkT",
+      "targetName": "Pietra Serena",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Sedimentary Basin & Quarry",
+        "secondaryFocuses": [],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "IbjEUT78mVu2VnNh",
+      "sourceName": "Granite",
+      "targetId": "SVmCftqx8Lmd2sMn",
+      "targetName": "Granite",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Mountain & Exposed Rock",
+        "secondaryFocuses": [
+          "Sedimentary Basin & Quarry"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "Qxi70s9lq4dZHi4f",
+      "sourceName": "Siltstone",
+      "targetId": "bBFCnVL95GRSGwqr",
+      "targetName": "Siltstone",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Sedimentary Basin & Quarry",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "SenUHeR3Ejkk2YGc",
+      "sourceName": "Murum",
+      "targetId": "bhYjUPA19DfXYRVp",
+      "targetName": "Murum",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Surface Soil & Weathered Deposit",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "bcdldsq5pJsShvis",
+      "sourceName": "Oolite",
+      "targetId": "bL6XWCK5Cl2xveOg",
+      "targetName": "Oolite",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Cave & Subterranean",
+        "secondaryFocuses": [
+          "Sedimentary Basin & Quarry"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "fyFSAdhWlZcg7xc7",
+      "sourceName": "Chalk",
+      "targetId": "Ce2ZI5c4k3LBPgtz",
+      "targetName": "Chalk",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Sedimentary Basin & Quarry",
+        "secondaryFocuses": [],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "hhIMPrFvJtoEkuEv",
+      "sourceName": "Basalt Stone",
+      "targetId": "IhPufJXKklgOX9Pe",
+      "targetName": "Basalt Stone",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Volcanic & Geothermal",
+        "secondaryFocuses": [
+          "Mountain & Exposed Rock"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "nS7BMa4AZVcxNt4z",
+      "sourceName": "Marble",
+      "targetId": "uaNPCEW17wdmIdxM",
+      "targetName": "Marble",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Mountain & Exposed Rock",
+        "secondaryFocuses": [
+          "Sedimentary Basin & Quarry"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "rpH9fbtFAAWSTAGW",
+      "sourceName": "Gabbro",
+      "targetId": "bmDsUmebLJemIGJw",
+      "targetName": "Gabbro",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Mountain & Exposed Rock",
+        "secondaryFocuses": [
+          "Sedimentary Basin & Quarry"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "x5x1RpXi7RdNcQKR",
+      "sourceName": "Slate",
+      "targetId": "sRN3c8LAzWO9IxgZ",
+      "targetName": "Slate",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Mountain & Exposed Rock",
+        "secondaryFocuses": [
+          "Sedimentary Basin & Quarry"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "x6PR0UOUklm32AKg",
+      "sourceName": "Paradiso",
+      "targetId": "bv11uZdmA6fdoyuP",
+      "targetName": "Paradiso",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Mountain & Exposed Rock",
+        "secondaryFocuses": [
+          "Sedimentary Basin & Quarry"
+        ],
+        "tier": "Rare"
+      }
+    },
+    {
+      "sourceId": "FA6Qs5ir7HRB43Oa",
+      "sourceName": "Quartz",
+      "targetId": "bMIoIAgfTx5DffHl",
+      "targetName": "Quartz",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "Mountain & Exposed Rock",
+          "River Gravel & Placer"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "f99h4xP0v4CEYcJT",
+      "sourceName": "Obsidian",
+      "targetId": "bFnLNMR7BLdzsSBA",
+      "targetName": "Obsidian",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Volcanic & Geothermal",
+        "secondaryFocuses": [
+          "Mountain & Exposed Rock"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "O602HJNcYcITWzql",
+      "sourceName": "Hematite",
+      "targetId": "hYlpL1i0QOtuuOan",
+      "targetName": "Hematite",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "Mountain & Exposed Rock"
+        ],
+        "tier": "Common"
+      }
+    },
+    {
+      "sourceId": "AS7qMvpgKkV2SFao",
+      "sourceName": "Malachite",
+      "targetId": "bpvweC3ViZgd1IqT",
+      "targetName": "Malachite",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "Mountain & Exposed Rock"
+        ],
+        "tier": "Uncommon"
+      }
+    },
+    {
+      "sourceId": "FxzN08vmZsdoHzCA",
+      "sourceName": "Rutile",
+      "targetId": "bbNyMhnYQGeXdT6a",
+      "targetName": "Rutile",
+      "targetFolder": "minerals-geological",
+      "revision": 1,
+      "gathering": {
+        "gatherable": "Yes",
+        "primaryFocus": "Ore Vein & Mine",
+        "secondaryFocuses": [
+          "River Gravel & Placer"
+        ],
+        "tier": "Uncommon"
+      }
+    }
+  ]
+}

@@ -11,11 +11,29 @@ The module manages:
 
 The world Item compendium remains the runtime target so stable compendium UUIDs can be used by Mastercrafted, Gatherer, and future Kor Sirok automation.
 
-## Version 0.3.0
+## Required / recommended modules
 
-Version 0.3.0 establishes the source-material library and performs the one-time Herbarium migration.
+- **Required:** Kris's Compendium of Trade Goods (`kctg-5e`). Kor Sirok imports selected source materials from the current KCTG compendium at runtime.
+- **Recommended:** Mastercrafted. If Mastercrafted is inactive, the source library still synchronizes but recipe-book synchronization is skipped.
 
-The managed compendium now receives this folder structure:
+## Version 0.4.0
+
+Version 0.4.0 adds the KCTG source-material import layer.
+
+The managed source-material library now has two ownership models:
+
+- **Herbarium-derived Items:** copied once from the campaign's old world Items. After import, the Kor Sirok copy owns its content and is never refreshed from the old source Item.
+- **KCTG-derived Items:** copied from the installed KCTG compendium into stable Kor Sirok IDs. Kor Sirok checks the current KCTG source and refreshes the local copy when the upstream source Item changes.
+
+The KCTG manifest currently contains **159 approved non-duplicate source materials**, classified into the Kor Sirok folder hierarchy and carrying gathering metadata. Herbarium duplicates were deliberately omitted.
+
+KCTG source refreshes are non-destructive when a source cannot be resolved: an existing Kor Sirok copy is retained and a warning is logged. If an upstream KCTG Item changes Foundry Item type, Kor Sirok replaces the local document under the same stable target ID and attempts rollback if recreation fails.
+
+Recipes still use the logical source label `kctg`, but now prefer a stable Kor Sirok copy whenever that ingredient belongs to the imported source catalog. Ordinary trade goods not yet included in the source catalog continue to resolve directly from KCTG.
+
+Version 0.4.0 also repairs the broken Battle Balm and Ironhide Salve icon references by switching them to core icon paths already used successfully by other formulations.
+
+## Compendium folder structure
 
 - `Source Materials`
   - `Wild Plants`
@@ -31,19 +49,13 @@ The managed compendium now receives this folder structure:
   - `Foundations`
   - `Formulations`
 
-The existing 69 campaign Herbarium world Items are copied once into the managed compendium using stable IDs. After the first successful import, the Kor Sirok copy owns its description, image, price, system data, and other content; later synchronization does **not** refresh those fields from the old world Item. Later runs only maintain Kor Sirok folder/classification metadata.
-
-The original world Herbarium Items are never deleted by the module. They may be kept, archived, or removed manually after the migration has been verified.
-
-Herbarium recipe components now resolve from the migrated `world.kor-sirok-alchemy` copies instead of directly from world Items. The managed recipe revisions are bumped so existing pages repoint automatically.
-
-KCTG remains an external ingredient source in 0.3.0. A later release will import the approved KCTG source catalog into stable Kor Sirok IDs and can then make KCTG an explicit module dependency.
-
 ## Current alchemy content
 
 - Nine foundational alchemical media.
 - Five finished field formulations.
 - Fourteen Mastercrafted recipes in *The First Principles of Practical Alchemy*.
+- Sixty-nine migrated Herbarium source Items.
+- One hundred fifty-nine managed KCTG source Items.
 - Finished formulation Items currently carry rules text but no Midi-QOL automation.
 
 ## Automatic and manual synchronization
@@ -60,6 +72,8 @@ Individual passes:
 
 `game.modules.get("kor-sirok-alchemy").api.syncHerbariumSources()`
 
+`game.modules.get("kor-sirok-alchemy").api.syncKctgSources()`
+
 `game.modules.get("kor-sirok-alchemy").api.syncRecipeBook()`
 
 ## Source files
@@ -68,7 +82,10 @@ Individual passes:
 - `data/items/foundations.json`
 - `data/items/formulations.json`
 - `data/sources/herbarium.json`
+- `data/sources/kctg.json`
 - `data/recipes/introduction-to-alchemy.json`
 - `scripts/sync.js`
 
-Native Kor Sirok managed documents should be edited in these source files rather than directly in Foundry. Increment the relevant `revision` whenever a managed record changes. Herbarium source-material content is the exception: after first import, its compendium copy is intentionally local-owned and may be edited directly without being overwritten by the original world Item.
+Native Kor Sirok managed documents should be edited in these source files rather than directly in Foundry. Increment the relevant `revision` whenever a managed native record changes.
+
+Herbarium source-material content is intentionally local-owned after first import. KCTG source-material content is intentionally refreshable from the installed KCTG source, while Kor Sirok-specific folder and gathering classification metadata remains controlled by this module.

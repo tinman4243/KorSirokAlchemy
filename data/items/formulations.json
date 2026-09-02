@@ -1,5 +1,6 @@
 {
   "schema": 1,
+  "folder": "formulations",
   "items": [
     {
       "id": "K3WlbDLbE6wsIlkz",
@@ -16,9 +17,9 @@
     {
       "id": "DTLVMG2Ais9CZIGW",
       "name": "Battle Balm",
-      "revision": 1,
+      "revision": 2,
       "kind": "consumable",
-      "img": "icons/consumables/potions/bottle-bulb-corked-orange.webp",
+      "img": "icons/consumables/potions/bottle-round-corked-green.webp",
       "priceGp": 50,
       "weightLb": 0.5,
       "identifier": "battle-balm",
@@ -40,9 +41,9 @@
     {
       "id": "mE4DGLNzdZkMSZSs",
       "name": "Ironhide Salve",
-      "revision": 1,
+      "revision": 2,
       "kind": "consumable",
-      "img": "icons/consumables/potions/bottle-bulb-corked-blue.webp",
+      "img": "icons/consumables/potions/bottle-corked-blue.webp",
       "priceGp": 100,
       "weightLb": 0.5,
       "identifier": "ironhide-salve",

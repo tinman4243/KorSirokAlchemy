@@ -4,6 +4,9 @@ const ITEM_PACK_NAME = "kor-sirok-alchemy";
 const ITEM_PACK_LABEL = "Kor Sirok — Alchemy";
 const KCTG_PACK_ID = "kctg-5e.kctg-dnd5e";
 const RECIPE_SOURCE = "data/recipes/introduction-to-alchemy.json";
+const FOLDER_SOURCE = "data/folders.json";
+const HERBARIUM_SOURCE = "data/sources/herbarium.json";
+const KCTG_SOURCE = "data/sources/kctg.json";
 const ITEM_SOURCES = [
   "data/items/foundations.json",
   "data/items/formulations.json"
@@ -36,7 +39,129 @@ async function ensureItemPack() {
   });
 }
 
-function materialItem(source, sourceFile) {
+
+async function withUnlockedPack(pack, callback) {
+  const wasLocked = pack.locked;
+  if (wasLocked) await pack.configure({ locked: false });
+
+  try {
+    return await callback();
+  } finally {
+    if (wasLocked) await pack.configure({ locked: true });
+  }
+}
+
+function currentFolderId(document) {
+  return document.folder?.id ?? document._source?.folder ?? null;
+}
+
+function sameJson(a, b) {
+  return JSON.stringify(a ?? null) === JSON.stringify(b ?? null);
+}
+
+async function syncFolders(pack = null) {
+  pack ??= await ensureItemPack();
+  const payload = await loadJson(FOLDER_SOURCE);
+  const definitions = payload.folders ?? [];
+
+  return withUnlockedPack(pack, async () => {
+    const folderCollection = pack.folders;
+    if (!folderCollection) {
+      throw new Error(
+        `Compendium ${ITEM_PACK_ID} does not expose its folder collection. ` +
+        `Kor Sirok Alchemy requires Foundry VTT 14 compendium-folder support.`
+      );
+    }
+
+    const byKey = new Map();
+    let created = 0;
+    let updated = 0;
+    let unchanged = 0;
+
+    for (const definition of definitions) {
+      const parentId = definition.parent ? byKey.get(definition.parent)?.id : null;
+      if (definition.parent && !parentId) {
+        throw new Error(
+          `Folder "${definition.name}" refers to unresolved parent key "${definition.parent}".`
+        );
+      }
+
+      let folder = folderCollection.get(definition.id);
+
+      if (!folder) {
+        const sameName = folderCollection.contents.filter(candidate =>
+          candidate.name === definition.name && currentFolderId(candidate) === parentId
+        );
+
+        if (sameName.length > 1) {
+          throw new Error(
+            `Compendium ${ITEM_PACK_ID} contains multiple folders named "${definition.name}" ` +
+            `under the same parent. Resolve the duplicate folders before syncing.`
+          );
+        }
+
+        folder = sameName[0] ?? null;
+      }
+
+      const managedFlags = {
+        managed: true,
+        kind: "compendium-folder",
+        key: definition.key,
+        source: FOLDER_SOURCE,
+        revision: definition.revision
+      };
+
+      if (!folder) {
+        folder = await Folder.create(
+          {
+            _id: definition.id,
+            name: definition.name,
+            type: "Item",
+            folder: parentId,
+            sorting: "a",
+            color: definition.color ?? null,
+            flags: { [MODULE_ID]: managedFlags }
+          },
+          { pack: pack.collection, keepId: true }
+        );
+        created++;
+      } else {
+        const changes = {};
+
+        if (folder.name !== definition.name) changes.name = definition.name;
+        if (currentFolderId(folder) !== parentId) changes.folder = parentId;
+        if (folder.sorting !== "a") changes.sorting = "a";
+        if ((folder.color ?? null) !== (definition.color ?? null)) {
+          changes.color = definition.color ?? null;
+        }
+
+        if (!sameJson(folder.flags?.[MODULE_ID], managedFlags)) {
+          changes[`flags.${MODULE_ID}`] = managedFlags;
+        }
+
+        if (Object.keys(changes).length) {
+          await folder.update(changes);
+          updated++;
+        } else {
+          unchanged++;
+        }
+      }
+
+      byKey.set(definition.key, folder);
+    }
+
+    console.log(`[${MODULE_ID}] Compendium-folder sync complete.`, {
+      created,
+      updated,
+      unchanged,
+      pack: pack.collection
+    });
+
+    return { created, updated, unchanged, byKey };
+  });
+}
+
+function materialItem(source, sourceFile, folderId = null) {
   const description =
     `<p>${source.description}</p>` +
     `<p><strong>Alchemical Use.</strong> ${source.alchemicalUse}</p>` +
@@ -47,6 +172,7 @@ function materialItem(source, sourceFile) {
     name: source.name,
     type: "loot",
     img: source.img,
+    folder: folderId,
     system: {
       description: { value: description, chat: "" },
       source: {
@@ -80,7 +206,7 @@ function materialItem(source, sourceFile) {
   };
 }
 
-function consumableItem(source, sourceFile) {
+function consumableItem(source, sourceFile, folderId = null) {
   const description =
     `<p>${source.description}</p>` +
     `<p><strong>Effect.</strong> ${source.effect}</p>`;
@@ -90,6 +216,7 @@ function consumableItem(source, sourceFile) {
     name: source.name,
     type: "consumable",
     img: source.img,
+    folder: folderId,
     system: {
       activities: {},
       uses: {
@@ -143,51 +270,58 @@ function consumableItem(source, sourceFile) {
   };
 }
 
-function toFoundryItem(source, sourceFile) {
+function toFoundryItem(source, sourceFile, folderId = null) {
   return source.kind === "consumable"
-    ? consumableItem(source, sourceFile)
-    : materialItem(source, sourceFile);
+    ? consumableItem(source, sourceFile, folderId)
+    : materialItem(source, sourceFile, folderId);
 }
 
-async function syncItems() {
-  const pack = await ensureItemPack();
+async function syncItems({ pack = null, folderMap = null } = {}) {
+  pack ??= await ensureItemPack();
+
+  if (!folderMap) {
+    const folders = await syncFolders(pack);
+    folderMap = folders.byKey;
+  }
+
   const sources = [];
 
   for (const sourceFile of ITEM_SOURCES) {
     const payload = await loadJson(sourceFile);
+    const folderKey = payload.folder ?? null;
+
     for (const item of payload.items ?? []) {
-      sources.push({ sourceFile, item });
+      sources.push({ sourceFile, folderKey, item });
     }
   }
 
-  const wasLocked = pack.locked;
-  if (wasLocked) await pack.configure({ locked: false });
+  return withUnlockedPack(pack, async () => {
+    let created = 0;
+    let updated = 0;
+    let unchanged = 0;
 
-  const index = await pack.getIndex({
-    fields: [`flags.${MODULE_ID}.revision`, `flags.${MODULE_ID}.source`]
-  });
+    for (const { sourceFile, folderKey, item: sourceItem } of sources) {
+      const folderId = folderKey ? folderMap.get(folderKey)?.id : null;
+      if (folderKey && !folderId) {
+        throw new Error(`Could not resolve target folder key "${folderKey}" for ${sourceItem.name}.`);
+      }
 
-  let created = 0;
-  let updated = 0;
-  let unchanged = 0;
-
-  try {
-    for (const { sourceFile, item: sourceItem } of sources) {
-      const indexed = index.get(sourceItem.id);
-      const existingRevision = indexed?.flags?.[MODULE_ID]?.revision;
-      const existingSource = indexed?.flags?.[MODULE_ID]?.source;
+      const existing = await pack.getDocument(sourceItem.id);
+      const existingRevision = existing?.flags?.[MODULE_ID]?.revision;
+      const existingSource = existing?.flags?.[MODULE_ID]?.source;
+      const folderMatches = existing ? currentFolderId(existing) === folderId : false;
 
       if (
-        indexed &&
+        existing &&
         existingRevision === sourceItem.revision &&
-        existingSource === sourceFile
+        existingSource === sourceFile &&
+        folderMatches
       ) {
         unchanged++;
         continue;
       }
 
-      const data = toFoundryItem(sourceItem, sourceFile);
-      const existing = await pack.getDocument(sourceItem.id);
+      const data = toFoundryItem(sourceItem, sourceFile, folderId);
 
       if (existing) {
         const update = foundry.utils.deepClone(data);
@@ -202,18 +336,143 @@ async function syncItems() {
         created++;
       }
     }
-  } finally {
-    if (wasLocked) await pack.configure({ locked: true });
+
+    console.log(`[${MODULE_ID}] Item sync complete.`, {
+      created,
+      updated,
+      unchanged,
+      pack: pack.collection
+    });
+
+    return { created, updated, unchanged };
+  });
+}
+
+async function syncHerbariumSources({ pack = null, folderMap = null } = {}) {
+  pack ??= await ensureItemPack();
+
+  if (!folderMap) {
+    const folders = await syncFolders(pack);
+    folderMap = folders.byKey;
   }
 
-  console.log(`[${MODULE_ID}] Item sync complete.`, {
-    created,
-    updated,
-    unchanged,
-    pack: pack.collection
-  });
+  const payload = await loadJson(HERBARIUM_SOURCE);
+  const definitions = payload.items ?? [];
 
-  return { created, updated, unchanged };
+  return withUnlockedPack(pack, async () => {
+    let created = 0;
+    let metadataUpdated = 0;
+    let unchanged = 0;
+    let missing = 0;
+    const missingItems = [];
+
+    for (const definition of definitions) {
+      const folderId = folderMap.get(definition.targetFolder)?.id;
+      if (!folderId) {
+        throw new Error(
+          `Could not resolve Herbarium target folder key "${definition.targetFolder}" ` +
+          `for "${definition.name}".`
+        );
+      }
+
+      const managedFlags = {
+        managed: true,
+        kind: "source-material",
+        contentOwner: "local-after-import",
+        source: HERBARIUM_SOURCE,
+        revision: definition.revision,
+        origin: {
+          provider: "herbarium",
+          worldItemId: definition.sourceId,
+          name: definition.name
+        },
+        gathering: foundry.utils.deepClone(definition.gathering ?? {})
+      };
+
+      const existing = await pack.getDocument(definition.targetId);
+
+      if (existing) {
+        if (existing.name !== definition.name) {
+          throw new Error(
+            `Herbarium target ID collision: ${definition.targetId} is "${existing.name}" ` +
+            `in ${ITEM_PACK_ID}, expected "${definition.name}".`
+          );
+        }
+
+        const changes = {};
+        if (currentFolderId(existing) !== folderId) changes.folder = folderId;
+
+        // The imported description, image, price, system data, etc. are deliberately
+        // NOT refreshed. After the first copy, the Kor Sirok document owns its content.
+        if (!sameJson(existing.flags?.[MODULE_ID], managedFlags)) {
+          changes[`flags.${MODULE_ID}`] = managedFlags;
+        }
+
+        if (Object.keys(changes).length) {
+          await existing.update(changes);
+          metadataUpdated++;
+        } else {
+          unchanged++;
+        }
+
+        continue;
+      }
+
+      let sourceItem = game.items.get(definition.sourceId);
+
+      if (sourceItem && sourceItem.name !== definition.name) {
+        sourceItem = null;
+      }
+
+      if (!sourceItem) {
+        const exactName = game.items.contents.filter(item => item.name === definition.name);
+        if (exactName.length === 1) sourceItem = exactName[0];
+      }
+
+      if (!sourceItem) {
+        missing++;
+        missingItems.push({
+          name: definition.name,
+          sourceId: definition.sourceId,
+          targetId: definition.targetId
+        });
+        continue;
+      }
+
+      const data = sourceItem.toObject();
+      data._id = definition.targetId;
+      data.folder = folderId;
+      delete data._stats;
+      delete data.ownership;
+
+      data.flags = foundry.utils.deepClone(data.flags ?? {});
+      data.flags[MODULE_ID] = managedFlags;
+
+      await Item.implementation.create(data, {
+        pack: pack.collection,
+        keepId: true
+      });
+      created++;
+    }
+
+    if (missingItems.length) {
+      console.warn(
+        `[${MODULE_ID}] Herbarium source Items were missing and could not be imported. ` +
+        `Existing Kor Sirok copies are never deleted.`,
+        missingItems
+      );
+    }
+
+    console.log(`[${MODULE_ID}] Herbarium source migration complete.`, {
+      created,
+      metadataUpdated,
+      unchanged,
+      missing,
+      pack: pack.collection
+    });
+
+    return { created, metadataUpdated, unchanged, missing, missingItems };
+  });
 }
 
 function uniqueNameMap(entries, label) {
@@ -239,6 +498,229 @@ function uniqueNameMap(entries, label) {
   }
 
   return result;
+}
+
+
+async function replaceCompendiumItemWithRollback(pack, existing, desired) {
+  const backup = existing.toObject();
+  delete backup._stats;
+  delete backup.ownership;
+
+  await existing.delete();
+
+  try {
+    return await Item.implementation.create(desired, {
+      pack: pack.collection,
+      keepId: true
+    });
+  } catch (error) {
+    try {
+      await Item.implementation.create(backup, {
+        pack: pack.collection,
+        keepId: true
+      });
+    } catch (rollbackError) {
+      console.error(
+        `[${MODULE_ID}] KCTG replacement rollback failed for "${backup.name}" (${backup._id}).`,
+        rollbackError
+      );
+    }
+
+    throw error;
+  }
+}
+
+async function syncKctgSources({ pack = null, folderMap = null } = {}) {
+  pack ??= await ensureItemPack();
+
+  if (!folderMap) {
+    const folders = await syncFolders(pack);
+    folderMap = folders.byKey;
+  }
+
+  const payload = await loadJson(KCTG_SOURCE);
+  const definitions = payload.items ?? [];
+  const sourcePackId = payload.sourcePack ?? KCTG_PACK_ID;
+  const sourcePack = game.packs.get(sourcePackId);
+
+  if (!sourcePack) {
+    throw new Error(
+      `Could not find required KCTG pack "${sourcePackId}". ` +
+      `Kor Sirok Alchemy 0.4.0+ requires the KCTG module to be installed and active.`
+    );
+  }
+
+  // The index lets routine world loads avoid materializing every KCTG Item. We only
+  // fetch full source documents when a local copy is new or the upstream Item changed.
+  const sourceIndex = await sourcePack.getIndex({ fields: ["_stats.modifiedTime"] });
+  const sourceById = new Map(sourceIndex.map(entry => [entry._id, entry]));
+  const sourceByName = uniqueNameMap(sourceIndex, sourcePackId);
+
+  return withUnlockedPack(pack, async () => {
+    let created = 0;
+    let refreshed = 0;
+    let metadataUpdated = 0;
+    let unchanged = 0;
+    let missing = 0;
+    let replacedForTypeChange = 0;
+    const missingItems = [];
+
+    for (const definition of definitions) {
+      const folderId = folderMap.get(definition.targetFolder)?.id;
+      if (!folderId) {
+        throw new Error(
+          `Could not resolve KCTG target folder key "${definition.targetFolder}" ` +
+          `for "${definition.targetName}".`
+        );
+      }
+
+      // Prefer the known current source ID. If a future KCTG release changes IDs,
+      // fall back to a unique exact source name. We never guess beyond that.
+      const sourceEntry =
+        sourceById.get(definition.sourceId) ?? sourceByName.get(definition.sourceName) ?? null;
+
+      const existing = await pack.getDocument(definition.targetId);
+
+      if (!sourceEntry) {
+        missing++;
+        missingItems.push({
+          sourceId: definition.sourceId,
+          sourceName: definition.sourceName,
+          targetId: definition.targetId,
+          targetName: definition.targetName,
+          existingKept: Boolean(existing)
+        });
+        continue;
+      }
+
+      if (existing && existing.flags?.[MODULE_ID]?.origin?.provider !== "kctg") {
+        const provider = existing.flags?.[MODULE_ID]?.origin?.provider ?? "unmanaged";
+        throw new Error(
+          `KCTG target ID collision: ${definition.targetId} is already ${provider} content ` +
+          `("${existing.name}"). Kor Sirok will not overwrite it.`
+        );
+      }
+
+      const sourceModifiedTime = sourceEntry._stats?.modifiedTime ?? null;
+      const managedFlags = {
+        managed: true,
+        kind: "source-material",
+        contentOwner: "refresh-from-kctg",
+        source: KCTG_SOURCE,
+        revision: definition.revision,
+        origin: {
+          provider: "kctg",
+          pack: sourcePackId,
+          sourceId: definition.sourceId,
+          sourceName: definition.sourceName,
+          resolvedSourceId: sourceEntry._id,
+          resolvedSourceName: sourceEntry.name,
+          modifiedTime: sourceModifiedTime
+        },
+        gathering: foundry.utils.deepClone(definition.gathering ?? {})
+      };
+
+      const existingOrigin = existing?.flags?.[MODULE_ID]?.origin;
+      const sourceChanged =
+        !existing ||
+        sourceModifiedTime === null ||
+        existingOrigin?.resolvedSourceId !== sourceEntry._id ||
+        existingOrigin?.modifiedTime !== sourceModifiedTime;
+
+      if (existing && !sourceChanged) {
+        const changes = {};
+
+        if (existing.name !== definition.targetName) changes.name = definition.targetName;
+        if (currentFolderId(existing) !== folderId) changes.folder = folderId;
+        if (!sameJson(existing.flags?.[MODULE_ID], managedFlags)) {
+          changes[`flags.${MODULE_ID}`] = managedFlags;
+        }
+
+        if (Object.keys(changes).length) {
+          await existing.update(changes);
+          metadataUpdated++;
+        } else {
+          unchanged++;
+        }
+
+        continue;
+      }
+
+      const sourceItem = await sourcePack.getDocument(sourceEntry._id);
+      if (!sourceItem) {
+        missing++;
+        missingItems.push({
+          sourceId: definition.sourceId,
+          sourceName: definition.sourceName,
+          resolvedSourceId: sourceEntry._id,
+          targetId: definition.targetId,
+          targetName: definition.targetName,
+          existingKept: Boolean(existing)
+        });
+        continue;
+      }
+
+      const desired = sourceItem.toObject();
+      desired._id = definition.targetId;
+      desired.name = definition.targetName;
+      desired.folder = folderId;
+      delete desired._stats;
+      delete desired.ownership;
+
+      desired.flags = foundry.utils.deepClone(desired.flags ?? {});
+      desired.flags[MODULE_ID] = managedFlags;
+
+      if (!existing) {
+        await Item.implementation.create(desired, {
+          pack: pack.collection,
+          keepId: true
+        });
+        created++;
+        continue;
+      }
+
+      if (existing.type !== desired.type) {
+        await replaceCompendiumItemWithRollback(pack, existing, desired);
+        refreshed++;
+        replacedForTypeChange++;
+        continue;
+      }
+
+      const update = foundry.utils.deepClone(desired);
+      delete update._id;
+      await existing.update(update);
+      refreshed++;
+    }
+
+    if (missingItems.length) {
+      console.warn(
+        `[${MODULE_ID}] Some KCTG source Items could not be resolved. ` +
+        `Existing Kor Sirok copies were kept and nothing was deleted.`,
+        missingItems
+      );
+    }
+
+    console.log(`[${MODULE_ID}] KCTG source synchronization complete.`, {
+      created,
+      refreshed,
+      metadataUpdated,
+      unchanged,
+      missing,
+      replacedForTypeChange,
+      pack: pack.collection,
+      sourcePack: sourcePackId
+    });
+
+    return {
+      created,
+      refreshed,
+      metadataUpdated,
+      unchanged,
+      missing,
+      replacedForTypeChange,
+      missingItems
+    };
+  });
 }
 
 function stableId(key) {
@@ -282,20 +764,37 @@ async function buildResolvers(alchemyPack) {
     );
   }
 
-  const [alchemyIndex, kctgIndex] = await Promise.all([
-    alchemyPack.getIndex({ fields: ["img"] }),
+  const [alchemyDocs, kctgIndex] = await Promise.all([
+    alchemyPack.getDocuments(),
     kctg.getIndex({ fields: ["img"] })
   ]);
 
-  const alchemyByName = uniqueNameMap(alchemyIndex, ITEM_PACK_ID);
+  const alchemyByName = uniqueNameMap(alchemyDocs, ITEM_PACK_ID);
   const kctgByName = uniqueNameMap(kctgIndex, KCTG_PACK_ID);
-
-  // Campaign botanical ingredients coexist with old KCTG world copies.
-  // Resolve Herbarium plants only from Items whose source book is explicitly Herbarium.
-  const herbariumItems = game.items.contents.filter(
-    item => item.system?.source?.book === "Herbarium"
+  const herbariumByName = uniqueNameMap(
+    alchemyDocs.filter(doc => doc.flags?.[MODULE_ID]?.origin?.provider === "herbarium"),
+    `${ITEM_PACK_ID} Herbarium sources`
   );
-  const herbariumByName = uniqueNameMap(herbariumItems, "Herbarium world Items");
+
+  // Recipes still use the source label "kctg" for ordinary trade-goods ingredients.
+  // When that KCTG Item has been imported into the definitive Kor Sirok source library,
+  // prefer the stable local copy. Items outside the managed source catalog continue to
+  // resolve directly from KCTG.
+  const localKctgBySourceName = new Map();
+  for (const doc of alchemyDocs) {
+    const origin = doc.flags?.[MODULE_ID]?.origin;
+    if (origin?.provider !== "kctg" || !origin.sourceName) continue;
+
+    if (localKctgBySourceName.has(origin.sourceName)) {
+      console.warn(
+        `[${MODULE_ID}] Multiple imported KCTG Items claim source name "${origin.sourceName}".`,
+        [localKctgBySourceName.get(origin.sourceName), doc]
+      );
+      localKctgBySourceName.set(origin.sourceName, null);
+    } else {
+      localKctgBySourceName.set(origin.sourceName, doc);
+    }
+  }
 
   // Some ordinary spell-component resources are campaign world Items. Their D&D5e
   // identifier is a better key than display name because display names may be duplicated.
@@ -319,13 +818,22 @@ async function buildResolvers(alchemyPack) {
       }
 
       return {
-        uuid: `Compendium.${ITEM_PACK_ID}.Item.${entry._id}`,
+        uuid: entry.uuid,
         name: entry.name,
         img: entry.img
       };
     },
 
     kctg(name) {
+      const local = localKctgBySourceName.get(name);
+      if (local) {
+        return {
+          uuid: local.uuid,
+          name: local.name,
+          img: local.img
+        };
+      }
+
       const entry = kctgByName.get(name);
       if (!entry) {
         throw new Error(`Could not uniquely resolve KCTG item "${name}" in ${KCTG_PACK_ID}.`);
@@ -342,8 +850,8 @@ async function buildResolvers(alchemyPack) {
       const entry = herbariumByName.get(name);
       if (!entry) {
         throw new Error(
-          `Could not uniquely resolve Herbarium Item "${name}". ` +
-          `Expected exactly one world Item with system.source.book = "Herbarium".`
+          `Could not uniquely resolve migrated Herbarium Item "${name}" in ${ITEM_PACK_ID}. ` +
+          `Run the Herbarium source migration before synchronizing recipes.`
         );
       }
 
@@ -621,7 +1129,11 @@ async function syncAll({ notify = true } = {}) {
   }
 
   try {
-    const items = await syncItems();
+    const pack = await ensureItemPack();
+    const folders = await syncFolders(pack);
+    const items = await syncItems({ pack, folderMap: folders.byKey });
+    const herbarium = await syncHerbariumSources({ pack, folderMap: folders.byKey });
+    const kctg = await syncKctgSources({ pack, folderMap: folders.byKey });
     const recipes = await syncRecipeBook();
 
     if (notify) {
@@ -629,14 +1141,29 @@ async function syncAll({ notify = true } = {}) {
         ? "recipes skipped (Mastercrafted inactive)"
         : `${recipes.created} recipes created, ${recipes.updated} updated, ${recipes.unchanged} unchanged`;
 
+      const herbariumText =
+        `${herbarium.created} Herbarium imported, ` +
+        `${herbarium.metadataUpdated} metadata updated, ` +
+        `${herbarium.unchanged} unchanged` +
+        (herbarium.missing ? `, ${herbarium.missing} source missing` : "");
+
+      const kctgText =
+        `${kctg.created} KCTG imported, ` +
+        `${kctg.refreshed} refreshed, ` +
+        `${kctg.metadataUpdated} metadata updated, ` +
+        `${kctg.unchanged} unchanged` +
+        (kctg.missing ? `, ${kctg.missing} source missing` : "") +
+        (kctg.replacedForTypeChange ? `, ${kctg.replacedForTypeChange} type-replaced` : "");
+
       ui.notifications.info(
         `Kor Sirok Alchemy synced: ` +
-        `${items.created} items created, ${items.updated} updated, ${items.unchanged} unchanged; ` +
-        `${recipeText}.`
+        `${folders.created} folders created, ${folders.updated} updated; ` +
+        `${items.created} native items created, ${items.updated} updated, ${items.unchanged} unchanged; ` +
+        `${herbariumText}; ${kctgText}; ${recipeText}.`
       );
     }
 
-    return { items, recipes };
+    return { folders, items, herbarium, kctg, recipes };
   } catch (error) {
     console.error(`[${MODULE_ID}] Synchronization failed.`, error);
     if (notify) ui.notifications.error(`Kor Sirok Alchemy sync failed: ${error.message}`);
@@ -649,7 +1176,10 @@ Hooks.once("ready", async () => {
   if (module) {
     module.api = {
       sync: syncAll,
+      syncFolders,
       syncItems,
+      syncHerbariumSources,
+      syncKctgSources,
       syncRecipeBook
     };
   }

@@ -3,7 +3,7 @@
   "book": {
     "id": "ClJ3azQsTv7s9vbZ",
     "name": "The First Principles of Practical Alchemy",
-    "revision": 2,
+    "revision": 4,
     "description": "A practical workshop primer covering the preparation of common alchemical media and a selection of reliable field formulations.",
     "img": "icons/tools/laboratory/alembic-glass-ball-blue.webp",
     "ingredientsInspection": "1",
@@ -13,7 +13,7 @@
       {
         "id": "Kr7stnmO4pCDeHEH",
         "name": "Rectified Spirit",
-        "revision": 2,
+        "revision": 4,
         "img": "icons/consumables/potions/bottle-corked-blue.webp",
         "instructions": "Ferment a clean source of sugar or starch in spring water, then repeatedly distill the wash until a nearly neutral, high-proof spirit remains. Choose one fermentable base; wild yeast and ordinary fuel are abstracted into the process.",
         "time": 4320,
@@ -72,7 +72,7 @@
       {
         "id": "S2OyARxzGkvYFMo3",
         "name": "Alcohest",
-        "revision": 2,
+        "revision": 4,
         "img": "icons/consumables/potions/bottle-metal-yellow-gray.webp",
         "instructions": "Further rectify strong spirit over natron, then fix the final distillate with powdered gold. The result is a solvent capable of holding essences that ordinary alcohol cannot reliably suspend.",
         "time": 1440,
@@ -119,7 +119,7 @@
       {
         "id": "F1XdkENQSK4sr0hP",
         "name": "Distilled Water",
-        "revision": 2,
+        "revision": 4,
         "img": "icons/consumables/potions/bottle-corked-blue.webp",
         "instructions": "Boil clean spring water and collect only the condensed vapor, leaving sediment and mineral salts behind.",
         "time": 120,
@@ -147,7 +147,7 @@
       {
         "id": "V1Epg3HzdcTBF4yd",
         "name": "Sharp Vinegar",
-        "revision": 2,
+        "revision": 4,
         "img": "icons/consumables/potions/bottle-corked-blue.webp",
         "instructions": "Expose a suitable brewed drink to a strong vinegar culture and allow it to sour fully before straining and concentrating it for workshop use. Choose one alcoholic base.",
         "time": 2880,
@@ -186,7 +186,7 @@
       {
         "id": "4EOxLOFmLIuYGcrt",
         "name": "Pressed Oil",
-        "revision": 2,
+        "revision": 4,
         "img": "icons/consumables/potions/bottle-corked-blue.webp",
         "instructions": "Crush and press an oil-rich fruit, nut, or seed, then settle and strain the result until a clean neutral carrier oil remains. Choose one oil source.",
         "time": 240,
@@ -235,7 +235,7 @@
       {
         "id": "ymr8ap08YVdLFNfW",
         "name": "Honey Syrup",
-        "revision": 2,
+        "revision": 4,
         "img": "icons/consumables/potions/bottle-corked-blue.webp",
         "instructions": "Clarify honey with purified water and reduce it slowly into a smooth, stable syrup suitable for suspending powders and bitter medicines.",
         "time": 120,
@@ -272,7 +272,7 @@
       {
         "id": "9GEskb55LbhEmxxA",
         "name": "Resinous Binder",
-        "revision": 2,
+        "revision": 4,
         "img": "icons/consumables/potions/bottle-metal-yellow-gray.webp",
         "instructions": "Dissolve and purify aromatic resin in rectified spirit, then reduce it until a tacky binder remains that stays workable in a sealed vessel.",
         "time": 480,
@@ -309,7 +309,7 @@
       {
         "id": "R680QyC7y2i4EuHr",
         "name": "Medicinal Charcoal",
-        "revision": 2,
+        "revision": 4,
         "img": "icons/svg/item-bag.svg",
         "instructions": "Char suitable clean wood in a restricted draft, then grind, wash, and dry the resulting charcoal until it is fit for medicinal and filtering work. Choose one wood source.",
         "time": 480,
@@ -353,7 +353,7 @@
       {
         "id": "YrcRMEhFyCv9P8Wy",
         "name": "Unguent Base",
-        "revision": 2,
+        "revision": 4,
         "img": "icons/svg/item-bag.svg",
         "instructions": "Warm clean pressed oil with rendered fat until the mixture combines, then cool and work it into a smooth neutral ointment base.",
         "time": 240,
@@ -390,7 +390,7 @@
       {
         "id": "zyfHTIl3NcsRMjtJ",
         "name": "Quickstep Tonic",
-        "revision": 2,
+        "revision": 4,
         "img": "icons/consumables/potions/bottle-round-corked-green.webp",
         "instructions": "Bruise mugwort and steep it in rectified spirit, then draw off and temper the most stimulating fraction.",
         "effect": "As a bonus action, drink the tonic. Your walking speed increases by 10 feet for 10 minutes.",
@@ -428,7 +428,7 @@
       {
         "id": "D03dny6XeaYPDCem",
         "name": "Battle Balm",
-        "revision": 2,
+        "revision": 4,
         "img": "icons/consumables/potions/bottle-bulb-corked-orange.webp",
         "instructions": "Work yarrow and lion's mane into a warm unguent base until their restorative principles are evenly suspended.",
         "effect": "As a bonus action, apply the balm. You gain 2d6 + 2 temporary hit points. A creature cannot benefit from Battle Balm again until 24 hours have passed.",
@@ -475,7 +475,7 @@
       {
         "id": "WzdB4Hl2K3UqSDxy",
         "name": "Tanglefoot Flask",
-        "revision": 2,
+        "revision": 4,
         "img": "icons/consumables/potions/bottle-bulb-corked-green.webp",
         "instructions": "Macerate bluebell into resinous binder, then seal the reactive mixture in a breakable glass vessel.",
         "effect": "As an action, throw the flask at a creature within 20 feet. The target must succeed on a DC 13 Dexterity saving throw or become Restrained. A restrained creature can use its action to make a DC 13 Strength check, ending the effect on a success.",
@@ -522,7 +522,7 @@
       {
         "id": "oMSGf8DXi2INzrjO",
         "name": "Ironhide Salve",
-        "revision": 2,
+        "revision": 4,
         "img": "icons/consumables/potions/bottle-bulb-corked-blue.webp",
         "instructions": "Grind dead man's skull and yarrow together with diamond dust, then work the powder into an unguent until the mixture takes on a dense gray sheen.",
         "effect": "As an action, apply the salve. Your Armor Class increases by 1 for 1 minute.",
@@ -579,7 +579,7 @@
       {
         "id": "GpztRtxLF43rJR1J",
         "name": "Keenmind Draught",
-        "revision": 2,
+        "revision": 4,
         "img": "icons/consumables/potions/bottle-corked-blue.webp",
         "instructions": "Dissolve a silver pearl into alcohest by alchemical means, then introduce lady's mantle and allow the draught to clarify until the metallic suspension becomes perfectly still.",
         "effect": "As a bonus action, drink the draught. For 1 minute, whenever you make an ability check or saving throw, add 1d4 to the roll.",

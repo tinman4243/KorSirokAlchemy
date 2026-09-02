@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.4.0
+- Made Kris's Compendium of Trade Goods (`kctg-5e`) a required module relationship.
+- Added `data/sources/kctg.json` with 159 approved non-duplicate source materials and Kor Sirok gathering classifications.
+- Added `syncKctgSources()` to copy KCTG Items into stable IDs inside `world.kor-sirok-alchemy`.
+- KCTG-derived source Items refresh when the installed upstream Item changes while retaining Kor Sirok stable IDs, folders, and gathering metadata.
+- Missing KCTG sources never delete existing local copies; unresolved entries are warned and skipped.
+- Added safe replacement/rollback handling for upstream KCTG Item-type changes.
+- Recipe resolution now prefers imported Kor Sirok copies for managed KCTG ingredients and falls back to the upstream KCTG pack for ordinary trade goods not yet imported.
+- Bumped all recipe revisions so affected ingredient UUIDs repoint to stable Kor Sirok copies.
+- Repaired the Battle Balm and Ironhide Salve icon paths and bumped those formulation revisions.
+
 ## 0.3.0
 - Added managed folders inside `world.kor-sirok-alchemy`, including Source Materials and Alchemy hierarchies.
 - Added a one-time migration manifest for all 69 campaign Herbarium Items.
