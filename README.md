@@ -124,3 +124,7 @@ Gathering workflow entry point:
 Native Kor Sirok managed documents should be edited in these source files rather than directly in Foundry. Increment the relevant `revision` whenever a managed native record changes.
 
 Herbarium source-material content is intentionally local-owned after first import. KCTG source-material content is intentionally refreshable from the installed KCTG source, while Kor Sirok-specific folder and gathering classification metadata remains controlled by this module.
+
+
+### v0.6.1 SocketLib initialization hotfix
+Kor Sirok now recovers if SocketLib's one-time `socketlib.ready` hook fired before the gathering script registered its listener.

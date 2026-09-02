@@ -1,3 +1,8 @@
+## 0.6.1
+
+- Fixed Gather Resources incorrectly reporting SocketLib as unavailable when SocketLib was active but its one-time ready hook had already fired before Kor Sirok registered.
+- SocketLib registration is now idempotent and retried at Foundry `ready` and lazily when gathering begins.
+
 # Changelog
 
 ## 0.6.0

@@ -619,8 +619,13 @@ async function startGatherResources(actorOrUuid = null) {
       return;
     }
 
+    if (!moduleSocket) initializeSocketlib();
     if (!moduleSocket) {
-      ui.notifications.error("Kor Sirok gathering requires SocketLib to be active and ready.");
+      const socketModule = game.modules.get("socketlib");
+      const detail = socketModule?.active
+        ? "SocketLib is active, but its API could not be registered."
+        : "SocketLib is not active.";
+      ui.notifications.error(`Kor Sirok gathering could not initialize SocketLib. ${detail}`);
       return;
     }
 
@@ -698,14 +703,27 @@ function addGatherResourcesHeaderControl(application, controls) {
 
 Hooks.on("getHeaderControlsApplicationV2", addGatherResourcesHeaderControl);
 
-Hooks.once("socketlib.ready", () => {
-  moduleSocket = socketlib.registerModule(MODULE_ID);
+function initializeSocketlib() {
+  if (moduleSocket) return moduleSocket;
+
+  const socketApi = globalThis.socketlib;
+  if (!socketApi?.registerModule) return null;
+
+  moduleSocket = socketApi.registerModule(MODULE_ID);
   moduleSocket.register("chooseGatherEnvironmentAsGM", chooseGatherEnvironmentAsGm);
   moduleSocket.register("resolveGeneralGatherAsGM", resolveGeneralGatherAsGm);
   moduleSocket.register("cancelGatherSessionAsGM", cancelGatherSessionAsGm);
-});
+
+  console.log(`[${MODULE_ID}] SocketLib integration registered.`);
+  return moduleSocket;
+}
+
+Hooks.once("socketlib.ready", initializeSocketlib);
 
 Hooks.once("ready", async () => {
+  // A dependent module can occasionally load after SocketLib has already fired its
+  // one-time ready hook. Recover by registering lazily once Foundry itself is ready.
+  initializeSocketlib();
   const module = game.modules.get(MODULE_ID);
   if (!module) return;
 
