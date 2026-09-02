@@ -128,3 +128,7 @@ Herbarium source-material content is intentionally local-owned after first impor
 
 ### v0.6.1 SocketLib initialization hotfix
 Kor Sirok now recovers if SocketLib's one-time `socketlib.ready` hook fired before the gathering script registered its listener.
+
+
+### v0.6.2 Socket manifest hotfix
+Added the Foundry manifest `"socket": true` flag required by SocketLib.

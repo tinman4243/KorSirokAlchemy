@@ -1,3 +1,8 @@
+## 0.6.2
+
+- Added `"socket": true` to the Foundry module manifest, which SocketLib requires before a module can register its socket namespace.
+- No gathering logic changes from v0.6.1.
+
 ## 0.6.1
 
 - Fixed Gather Resources incorrectly reporting SocketLib as unavailable when SocketLib was active but its one-time ready hook had already fired before Kor Sirok registered.
