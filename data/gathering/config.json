@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "generalGathering": {
+    "maxHours": 3,
+    "minutesPerHour": 60,
+    "disciplines": {
+      "botanical-fungal": {
+        "label": "Plants & Fungi",
+        "icon": "fa-solid fa-seedling",
+        "toolId": "herb",
+        "toolLabel": "Herbalism Kit"
+      }
+    },
+    "ladder": [
+      {
+        "min": 22,
+        "draws": { "Common": 12, "Uncommon": 8, "Rare": 4 }
+      },
+      {
+        "min": 18,
+        "draws": { "Common": 10, "Uncommon": 6, "Rare": 3 }
+      },
+      {
+        "min": 15,
+        "draws": { "Common": 8, "Uncommon": 4, "Rare": 2 }
+      },
+      {
+        "min": 12,
+        "draws": { "Common": 4, "Uncommon": 2, "Rare": 0 }
+      },
+      {
+        "min": 8,
+        "draws": { "Common": 2, "Uncommon": 0, "Rare": 0 }
+      },
+      {
+        "min": -999,
+        "draws": { "Common": 1, "Uncommon": 0, "Rare": 0 }
+      }
+    ]
+  }
+}

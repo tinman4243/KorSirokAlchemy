@@ -15,8 +15,19 @@ The world Item compendium remains the runtime target so stable compendium UUIDs 
 ## Required / recommended modules
 
 - **Required:** Kris's Compendium of Trade Goods (`kctg-5e`). Kor Sirok imports selected source materials from the current KCTG compendium at runtime.
+- **Required:** SocketLib (`socketlib`). The gathering workflow uses it for authoritative player-to-GM prompts, awards, and world-time advancement.
 - **Recommended:** Mastercrafted. If Mastercrafted is inactive, the source library still synchronizes but recipe-book synchronization is skipped.
-- **Recommended:** Gatherer. Version 0.5.0 generates Gatherer-ready RollTables; player-facing degree-of-success gathering automation is the next integration layer.
+- **Recommended:** Gatherer. Kor Sirok generates Gatherer-ready RollTables, while v0.6.0 also provides its own player-facing degree-of-success gathering workflow.
+
+## Version 0.6.0
+
+Version 0.6.0 adds the first playable **General Plants & Fungi Gathering** workflow. Owned character sheets receive a **Gather Resources** seedling control. The player chooses a gathering discipline, the GM selects the current regional zone and the ecological focuses immediately present, and the player allocates up to three one-hour gathering slots. The same focus may be selected repeatedly.
+
+Each selected hour prompts a normal D&D5e Herbalism Kit check. The total is converted through the configurable ladder in `data/gathering/config.json` into hidden rolls on the Common, Uncommon, and Rare tables for that regional focus. Even a very poor check receives one Common roll when that Common pool exists; environments without a Common pool can still produce a true failure.
+
+Results are awarded from the stable `world.kor-sirok-alchemy` source library and consolidated into the character inventory. A single public chat summary reports the hour, environment, check total, and ingredients found without exposing rarity-pool mechanics. World time advances one hour per selected slot.
+
+The current implementation supports Plants & Fungi only. Fishing, Hunting & Trapping, Prospecting, targeted ingredient searches, habitat-recall Nature checks, and a regional map chooser are future layers built on the same regional/focus architecture.
 
 ## Version 0.5.0
 
@@ -93,6 +104,10 @@ Individual passes:
 
 `game.modules.get("kor-sirok-alchemy").api.syncRecipeBook()`
 
+Gathering workflow entry point:
+
+`game.modules.get("kor-sirok-alchemy").api.startGatherResources(actor)`
+
 ## Source files
 
 - `data/folders.json`
@@ -102,7 +117,9 @@ Individual passes:
 - `data/sources/kctg.json`
 - `data/recipes/introduction-to-alchemy.json`
 - `data/gathering/zones/hercynian-coastal-foreland.json`
+- `data/gathering/config.json`
 - `scripts/sync.js`
+- `scripts/gathering.js`
 
 Native Kor Sirok managed documents should be edited in these source files rather than directly in Foundry. Increment the relevant `revision` whenever a managed native record changes.
 

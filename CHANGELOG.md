@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.6.0
+- Added the first end-to-end player-facing **Gather Resources** workflow for character Actors.
+- Added a built-in seedling header control on owned character sheets.
+- Added the gather-discipline chooser; Plants & Fungi is active while Fishing, Hunting & Trapping, and Prospecting are shown as coming soon.
+- Added SocketLib as a required dependency for authoritative player/GM handoff and resolution.
+- The GM now selects the regional zone and checks which generated ecological focuses are immediately available.
+- The player can allocate up to three one-hour gathering slots and may select the same ecological focus repeatedly.
+- Added one D&D5e Herbalism Kit check per gathering hour.
+- Added configurable degree-of-success pull ladder in `data/gathering/config.json`; even the lowest roll receives one Common-table roll when a Common pool exists. Missing rarity pools simply contribute no results.
+- Gathering-table rolls are hidden and non-destructive; only the resulting ingredient haul is summarized to chat.
+- Gathered source Items are added to or consolidated in the character inventory from stable `world.kor-sirok-alchemy` source Items.
+- World time advances by one hour per selected gathering slot, allowing Mastercrafted and calendar/timekeeping automation to advance naturally.
+- Added API methods `startGatherResources()` and `gatheringCatalog()` for testing/future integration.
+
 ## 0.5.0
 - Added the managed world RollTable compendium `world.kor-sirok-gathering` (`Kor Sirok — Gathering Tables`).
 - Added Zone 1, **Hercynian Coastal Foreland**, as the first canonical regional gathering definition.
